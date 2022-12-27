@@ -1,0 +1,13 @@
+# generated from manifests external_dependencies
+git+https://github.com/OCA/openupgradelib.git@master
+unicodecsv
+cryptography
+openpyxl
+PyPDF2
+xmlschema
+zeep
+pyarmor
+requests
+requests_html
+xmltodict
+playsound==1.2.2
