@@ -1,0 +1,307 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ptplus_edi_saphety
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-28 12:01+0000\n"
+"PO-Revision-Date: 2022-11-28 12:13+0000\n"
+"Last-Translator: Pedro Castro Silva <pedrocs@exo.pt>\n"
+"Language-Team: \n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.1\n"
+
+#. module: ptplus_edi_saphety
+#: model_terms:ir.ui.view,arch_db:ptplus_edi_saphety.res_config_settings_view_form_pt_saphety
+msgid ""
+"<span class=\"o_form_label\">Saphety EDI</span>\n"
+"                        <span class=\"fa fa-lg fa-building-o\" title="
+"\"Values set here are company-specific.\" aria-label=\"Values set here are "
+"company-specific.\" groups=\"base.group_multi_company\" role=\"img\"/>"
+msgstr ""
+"<span class=\"o_form_label\">EDI Saphety</span>\n"
+"                            <span class=\"fa fa-lg fa-building-o\" title="
+"\"Valores atribuídos aqui são específicos para a empresa.\" aria-label="
+"\"Valores atribuídos aqui são específicos para a empresa.\" groups=\"base."
+"group_multi_company\" role=\"img\"/>"
+
+#. module: ptplus_edi_saphety
+#: code:addons/ptplus_edi_saphety/webservice.py:0
+#, python-format
+msgid "Code: {}. Fields: {}. Values: {}\n"
+msgstr "Código: {}. Campos: {}. Valores: {}\n"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model,name:ptplus_edi_saphety.model_res_company
+msgid "Companies"
+msgstr "Empresas"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model,name:ptplus_edi_saphety.model_res_config_settings
+msgid "Config Settings"
+msgstr "Definições"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_account_move__display_name
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_res_company__display_name
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "Nome de Exibição"
+
+#. module: ptplus_edi_saphety
+#: model_terms:ir.ui.view,arch_db:ptplus_edi_saphety.view_move_form
+msgid "Document ID"
+msgstr "ID do Documento"
+
+#. module: ptplus_edi_saphety
+#: model_terms:ir.ui.view,arch_db:ptplus_edi_saphety.view_move_form
+msgid "Document Status"
+msgstr "Estado do documento"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields.selection,name:ptplus_edi_saphety.selection__account_move__saphety_request_status__error
+msgid "Error"
+msgstr "Erro"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields.selection,name:ptplus_edi_saphety.selection__account_move__saphety_request_status__finished
+msgid "Finished"
+msgstr "Concluído"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields.selection,name:ptplus_edi_saphety.selection__account_move__saphety_document_status__error
+msgid "Has errors"
+msgstr "Tem erros"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_account_move__id
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_res_company__id
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_res_config_settings__id
+msgid "ID"
+msgstr "ID"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model,name:ptplus_edi_saphety.model_account_move
+msgid "Journal Entry"
+msgstr "Entrada do Jornal"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_account_move____last_update
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_res_company____last_update
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_res_config_settings____last_update
+msgid "Last Modified on"
+msgstr "Última modificação"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields.selection,name:ptplus_edi_saphety.selection__account_move__saphety_document_status__notintegrated
+msgid "Not Integrated"
+msgstr "Não Integrado"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields.selection,name:ptplus_edi_saphety.selection__account_move__saphety_document_status__not_sent
+msgid "Not Sent"
+msgstr "Não Enviado"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields.selection,name:ptplus_edi_saphety.selection__account_move__saphety_document_status__paid
+msgid "Paid"
+msgstr "Pago"
+
+#. module: ptplus_edi_saphety
+#: model_terms:ir.ui.view,arch_db:ptplus_edi_saphety.res_config_settings_view_form_pt_saphety
+msgid "Password"
+msgstr "Palavra-passe"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields.selection,name:ptplus_edi_saphety.selection__account_move__saphety_request_status__queued
+msgid "Queued"
+msgstr "Em Espera"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields.selection,name:ptplus_edi_saphety.selection__account_move__saphety_document_status__received
+msgid "Received"
+msgstr "Recebido"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields.selection,name:ptplus_edi_saphety.selection__account_move__saphety_document_status__rejected
+msgid "Rejected"
+msgstr "Rejeitado"
+
+#. module: ptplus_edi_saphety
+#: model_terms:ir.ui.view,arch_db:ptplus_edi_saphety.view_move_form
+msgid "Request ID"
+msgstr "ID da Submissão"
+
+#. module: ptplus_edi_saphety
+#: model_terms:ir.ui.view,arch_db:ptplus_edi_saphety.view_move_form
+msgid "Request Status"
+msgstr "Estado da Submissão"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields.selection,name:ptplus_edi_saphety.selection__account_move__saphety_request_status__running
+msgid "Running"
+msgstr "Em Curso"
+
+#. module: ptplus_edi_saphety
+#: code:addons/ptplus_edi_saphety/webservice.py:0
+#, python-format
+msgid ""
+"Saphety API Error on service %s:\n"
+"\n"
+"%s"
+msgstr ""
+"Erro da API Saphety no serviço %s:\n"
+"\n"
+"%s"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_account_bank_statement_line__saphety_document_id
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_account_move__saphety_document_id
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_account_payment__saphety_document_id
+msgid "Saphety Document ID"
+msgstr "ID do Documento Saphety"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_account_bank_statement_line__saphety_document_status
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_account_move__saphety_document_status
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_account_payment__saphety_document_status
+msgid "Saphety Document Status"
+msgstr "Estado do Documento Saphety"
+
+#. module: ptplus_edi_saphety
+#: model_terms:ir.ui.view,arch_db:ptplus_edi_saphety.view_move_form
+msgid "Saphety EDI"
+msgstr "EDI Saphety"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_res_company__saphety_password
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_res_config_settings__saphety_password
+msgid "Saphety Password"
+msgstr "Senha Saphety"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_account_bank_statement_line__saphety_request_id
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_account_move__saphety_request_id
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_account_payment__saphety_request_id
+msgid "Saphety Request ID"
+msgstr "ID da Submissão Saphety"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_account_bank_statement_line__saphety_request_status
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_account_move__saphety_request_status
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_account_payment__saphety_request_status
+msgid "Saphety Request Status"
+msgstr "Estado da Submissão Saphety"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_res_company__saphety_username
+#: model:ir.model.fields,field_description:ptplus_edi_saphety.field_res_config_settings__saphety_username
+msgid "Saphety Username"
+msgstr "Nome de utilizador Saphety"
+
+#. module: ptplus_edi_saphety
+#: model:ir.actions.server,name:ptplus_edi_saphety.ir_cron_get_outbound_document_status_ir_actions_server
+#: model:ir.cron,cron_name:ptplus_edi_saphety.ir_cron_get_outbound_document_status
+#: model:ir.cron,name:ptplus_edi_saphety.ir_cron_get_outbound_document_status
+msgid "Saphety: check outbound financial documents status"
+msgstr "Saphety: verificar o estado de saída de documentos financeiros"
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields.selection,name:ptplus_edi_saphety.selection__account_move__saphety_document_status__sent
+msgid "Sent"
+msgstr "Enviado"
+
+#. module: ptplus_edi_saphety
+#: model_terms:ir.ui.view,arch_db:ptplus_edi_saphety.res_config_settings_view_form_pt_saphety
+msgid "Submit your CIUS-PT e-invoices on Saphety platform."
+msgstr "Submeta as suas faturas eletrónicas CIUS-PT na plataforma Saphety."
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields,help:ptplus_edi_saphety.field_account_bank_statement_line__saphety_request_id
+#: model:ir.model.fields,help:ptplus_edi_saphety.field_account_move__saphety_request_id
+#: model:ir.model.fields,help:ptplus_edi_saphety.field_account_payment__saphety_request_id
+msgid ""
+"The Id of the async request received upon document submission on the Saphety "
+"platform."
+msgstr ""
+"O ID do pedido assíncrono recebido após submissão do documento na plataforma "
+"Saphety."
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields,help:ptplus_edi_saphety.field_account_bank_statement_line__saphety_document_id
+#: model:ir.model.fields,help:ptplus_edi_saphety.field_account_move__saphety_document_id
+#: model:ir.model.fields,help:ptplus_edi_saphety.field_account_payment__saphety_document_id
+msgid ""
+"The Id of the document on the Saphety platform. It's only filled and visible "
+"when the request status is Finished."
+msgstr ""
+"Identificação do documento na plataforma Saphety. Só é preenchido e visível "
+"quando o estado do pedido é Concluído."
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields,help:ptplus_edi_saphety.field_account_bank_statement_line__saphety_request_status
+#: model:ir.model.fields,help:ptplus_edi_saphety.field_account_move__saphety_request_status
+#: model:ir.model.fields,help:ptplus_edi_saphety.field_account_payment__saphety_request_status
+msgid ""
+"The status of the Saphety platform document submission async request. "
+"Possible values are Queued, Running, Error or Finished."
+msgstr ""
+"O estado da submissão assíncrona do documento na plataforma Saphety. Os "
+"valores possíveis são Em Espera, Em Curso, Erro ou Concluído."
+
+#. module: ptplus_edi_saphety
+#: model:ir.model.fields,help:ptplus_edi_saphety.field_account_bank_statement_line__saphety_document_status
+#: model:ir.model.fields,help:ptplus_edi_saphety.field_account_move__saphety_document_status
+#: model:ir.model.fields,help:ptplus_edi_saphety.field_account_payment__saphety_document_status
+msgid ""
+"The status of the Saphety platform document. Possible values are Sent (to "
+"customer), Paid (by customer), Received (by customer), Error, Not Sent, Not "
+"Integrated or Rejected."
+msgstr ""
+"O estatuto do documento na plataforma Saphety. Os valores possíveis são "
+"Enviado (ao cliente), Pago (por cliente), Recebido (por cliente), Erro, Não "
+"Enviado, Não Integrado ou Rejeitado."
+
+#. module: ptplus_edi_saphety
+#: model_terms:ir.ui.view,arch_db:ptplus_edi_saphety.res_config_settings_view_form_pt_saphety
+msgid ""
+"These configurations will allow you to set up a Saphety account to submit "
+"legal format electronic invoices."
+msgstr ""
+"Estas configurações permitem configurar uma conta Saphety para a submissão "
+"de faturas eletrónicas com o formato legal."
+
+#. module: ptplus_edi_saphety
+#: code:addons/ptplus_edi_saphety/webservice.py:0
+#, python-format
+msgid "Timeout"
+msgstr "Tempo esgotado"
+
+#. module: ptplus_edi_saphety
+#: code:addons/ptplus_edi_saphety/webservice.py:0
+#, python-format
+msgid "Too many redirects"
+msgstr "Demasiados redireccionamentos"
+
+#. module: ptplus_edi_saphety
+#: model_terms:ir.ui.view,arch_db:ptplus_edi_saphety.res_config_settings_view_form_pt_saphety
+msgid "Username"
+msgstr "Nome de Utilizador"
+
+#~ msgid "Accepted"
+#~ msgstr "Aceite"
+
+#~ msgid "Invalid authentication"
+#~ msgstr "Autenticação inválida"
+
+#~ msgid "Invoice ID"
+#~ msgstr "Id da fatura"
+
+#~ msgid "Outbound Financial Document ID"
+#~ msgstr "ID documento financeiro"

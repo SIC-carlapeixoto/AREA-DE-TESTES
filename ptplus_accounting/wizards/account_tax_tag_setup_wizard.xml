@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="view_account_tax_tag_setup_wizard" model="ir.ui.view">
+        <field name="name">account.tax.tag.setup.wizard.form</field>
+        <field name="model">account.tax.tag.setup.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Account Tax Tag Setup Wizard">
+                <field name="state" invisible="1" />
+
+                <group states="select">
+                    <div style="text-align:justify" name="info">
+                        <span
+                            class="o_form_label"
+                        >This XXX wizard will try to find a taxonomy code for each selected
+                        account. If there's only one possible code, it will be assigned to the
+                        account. A warning will be given in case the new taxonomy code is different
+                        from the previous one
+                        </span>
+                    </div>
+                </group>
+                <group string="Warnings" states="done">
+                    <field name="warnings" readonly="1" widget="html" nolabel="1" />
+                </group>
+                <footer states="select">
+                    <button
+                        string="Setup"
+                        class="btn-primary"
+                        name="setup"
+                        type="object"
+                    />
+                    <button string="Cancel" class="oe_link" special="cancel" />
+                </footer>
+                <footer states="done">
+                    <button string="Close" name="close" type="object" />
+                </footer>
+           </form>
+        </field>
+    </record>
+
+    <!-- Add action entry in the Action Menu for Account Taxes -->
+    <record id="action_account_tax_tag_setup_wizard" model="ir.actions.act_window">
+        <field name="name">Account Tax Tag Setup Wizard</field>
+        <field name="res_model">account.tax.tag.setup.wizard</field>
+        <field name="binding_model_id" ref="account.model_account_tax" />
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

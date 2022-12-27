@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+       <template id="report_aue_document">
+        <!--<t t-call="web.internal_layout"> -->
+        <t t-call="sic_nmvs_connector.custom_report_aue_external_layout">
+            <t t-set="o" t-value="o.with_context(lang=o.partner_id.lang)"/>
+            <t t-set="forced_vat" t-value="o.fiscal_position_id.foreign_vat"/> <!-- So that it appears in the footer of the report instead of the company VAT if it's set -->
+   
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div style="text-align: center">
+                            <h2 style="color: rgb(0, 153, 204);">Pedido de AUE de benefício clínico bem reconhecido</h2>
+                            AUE destinada a permitir a utilização de medicamentos com benefício clínico bem reconhecido, imprescindíveis e sem alternativa terapêutica
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+
+            <div class="page">
+
+                <h5 class="mt-4" style="color: rgb(0, 153, 204);">1. Identificação da instituição de saúde</h5>
+                <table style="border: 1px solid black;">
+                    <tbody>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Nome
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbsd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Morada
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbbbbb famrma bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbsd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Código Postal
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbsd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    E-mail
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbsd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Telefone
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                    </tbody>
+                </table>
+
+                <!-- New Table-->
+                <h5 class="mt-4" style="color: rgb(0, 153, 204);">2. Identificação do medicamento</h5>
+                <table style="border: 1px solid black;">
+                    <tbody>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Nome do Medicamento
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbsd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    DCI / Substância Ativa
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbbbbb famrma bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbsd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Forma Farmacêutica
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbsd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Dosagem
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbsd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Apresentação
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                    </tbody>
+                </table>
+
+                <!-- New Table-->
+
+                <!-- New Table-->
+                <!-- sem tit-->
+                <br/>
+                <table style="border: 1px solid black;">
+                    <tbody>
+                            <tr t-att-class="'o_line_section'">
+                                    <td style="border-left: 1px solid transparent; border-top: 1px solid transparent;width: 33.33%">
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;width: 33.33%"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>Sim</span>
+                                        </div>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;width: 33.33%"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>Não</span>
+                                        </div>
+                                    </td>
+                            </tr>
+
+                            <tr t-att-class="'o_line_section'">
+                                    <td style="border: 1px solid black;width: 33.33%;">
+                                        <div style="margin-left: 14px;margin-right: 15px;"><span>Medicamento em rutura</span></div>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;width: 33.33%"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;margin-top: 10px;margin-bottom: 10px;">
+                                            <span>
+                                                <div style="width:20px; height:20px; border: 1px solid #000; display: inline-block;"></div>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;width: 33.33%"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;margin-top: 10px;margin-bottom: 10px;">
+                                            <span>
+                                                <div style="width:20px; height:20px; border: 1px solid #000; display: inline-block;"></div>
+                                            </span>
+                                        </div>
+                                    </td>
+                            </tr>
+
+                            <tr t-att-class="'o_line_section'">
+                                    <td style="border: 1px solid black;width: 33.33%;margin-left: 20px;">
+                                        <div style="margin-left: 14px;margin-right: 15px;"><span>FNM</span></div>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;width: 33.33%"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;margin-top: 10px;margin-bottom: 10px;">
+                                            <span>
+                                                <div style="width:20px; height:20px; border: 1px solid #000; display: inline-block;"></div>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;width: 33.33%"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;margin-top: 10px;margin-bottom: 10px;">
+                                            <span class="text-center">
+                                                <div style="width:20px; height:20px; border: 1px solid #000; display: inline-block;"></div>
+                                                <br/>Preencher Justificação
+                                            </span>
+                                        </div>
+                                    </td>
+                            </tr>
+
+                            <tr t-att-class="'o_line_section'">
+                                    <td style="border: 1px solid black;width: 33.33%;margin-left: 20px;">
+                                        <div style="margin-left: 14px;margin-right: 15px;"><span>Medicamento pertence à lista identificada pelo Infarmed</span></div>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;width: 33.33%"> 
+                                           <div style="margin-left: 10px;margin-right: 10px;margin-top: 10px;margin-bottom: 10px;">
+                                            <span>
+                                                <div style="width:20px; height:20px; border: 1px solid #000; display: inline-block;"></div>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;width: 33.33%"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;margin-top: 10px;margin-bottom: 10px;">
+                                            <span>
+                                                <div style="width:20px; height:20px; border: 1px solid #000; display: inline-block;"></div>
+                                                <br/>Preencher Justificação
+                                            </span>
+                                        </div>
+                                    </td>
+                            </tr>
+
+                            <tr t-att-class="'o_line_section'">
+                                    <td style="border: 1px solid black;width: 33.33%;margin-left: 20px;">
+                                        <div style="margin-left: 14px;margin-right: 15px;"><span>Medicamento contém substâncias controladas</span></div>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;width: 33.33%"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;margin-top: 10px;margin-bottom: 10px;">
+                                            <span>
+                                                <div style="width:20px; height:20px; border: 1px solid #000; display: inline-block;"></div>
+                                                <br/>Requer emissão de Certificado de importação
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;width: 33.33%"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;margin-top: 10px;margin-bottom: 10px;">
+                                            <span>
+                                                <div style="width:20px; height:20px; border: 1px solid #000; display: inline-block;"></div>
+                                            </span>
+                                        </div>
+                                    </td>
+                            </tr>
+
+                            <tr t-att-class="'o_line_section'">
+                                    <td style="margin-left: 10px;border: 1px solid black; width: 33.33%">
+                                        <div style="margin-left: 14px;margin-right: 15px;"><span>Derivado do sangue ou plasma, vacina ou medicamento contendo albumina humana como excipiente</span></div>
+                                    </td>
+                                    <td class="text-center col-4" style="border: 1px solid black;width: 33.33%"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;margin-top: 10px;margin-bottom: 10px;">
+                                            <span>
+                                                <div style="width:20px; height:20px; border: 1px solid #000; display: inline-block;"></div>
+                                                <br/>Requer emissão de CAUL
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td class="text-center col-4" style="border: 1px solid black;width: 33.33%"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;margin-top: 10px;margin-bottom: 10px;">
+                                            <span>
+                                                <div style="width:20px; height:20px; border: 1px solid #000; display: inline-block;"></div>
+                                            </span>
+                                        </div>
+                                    </td>
+                            </tr>
+
+                    </tbody>
+                </table>
+
+                <!-- New Table-->
+                <h5 class="mt-4" style="color: rgb(0, 153, 204);">3. Caracterização da cadeia de importação do medicamento</h5>
+                <table style="border: 1px solid black;">
+                    <tbody>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Titular de AIM
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbsd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    País da AIM
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbbbbb famrma bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbsd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Fabricante
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbbbbb famrma bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbsd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    País de Fabrico
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbsd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Libertador de lote (se aplicável)
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbsd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    País de libertação de lote (se aplicável)
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Distribuidor do país de procedência
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    País de procedência
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                    </tbody>
+                </table>
+
+                <br/>
+
+                <table style="border: 1px solid black;">
+                    <tbody>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Distribuidor em Portugal
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbsd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Alfâdega (se aplicável)
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                    </tbody>
+                </table>
+
+                <h5 class="mt-4" style="color: rgb(0, 153, 204);">4. Caracterização do pedido</h5>
+                <table style="border: 1px solid black;">
+                    <tbody>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Quantidade unitária
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbsd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Preço unitário (com IVA)
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Estimativa da despesa (com IVA)
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                    </tbody>
+                </table>
+
+                <br/>
+
+                <table style="border: 1px solid black;">
+                    <tbody>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Consumo médio anual no hospital (em unidades CHNM)
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbsd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Duração prevista para a AUE
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                    </tbody>
+                </table>
+
+
+                <h5 class="mt-4" style="color: rgb(0, 153, 204);">5. Justificação</h5>
+                <table style="border: 1px solid black;">
+                    <tbody>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Indicação terapêutica para a qual se pretende o medicamento
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbsd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Descrição das razões para não se utilizarem as alternativas existentes no mercado
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="col-4" style="border: 1px solid black;">
+                                    Fundamentação científica da utilização da medicamento (por exemplo bibliografia)
+                                    </td>
+                                    <td class="text-left" style="border: 1px solid black;"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;">
+                                            <span>bbbbbbbbbbbbbbd</span>
+                                        </div>
+                                    </td>
+                            </tr>
+                    </tbody>
+                </table>
+
+
+
+                <h5 class="mt-4" style="color: rgb(0, 153, 204);">6. Termo de responsabilidade</h5>
+                Eu xxxxxxx , na qualidade de yyyyyyy desta instituição de <br/>
+
+                <table style="border: 1px solid transparent;">
+                    <tbody>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="text-center col-4" style="border: 1px solid transparent;width: 10%"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;margin-top: 10px;margin-bottom: 10px;">
+                                            <span>
+                                                <div style="width:20px; height:20px; border: 1px solid #000; display: inline-block;"></div>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td style="margin-left: 10px;border: 1px solid transparent; width: 90%">
+                                        Aceito, para efeitos do previsto no artigo 9.º Decreto-Lei n.º 128/2013, de 5 de Setembro, que as comunicações com
+                                        o INFARMED no âmbito do presente pedido sejam feitas através das seguintes caixas de correio eletrónico
+                                        uss@infarmed.pt do requerente.
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="text-center col-4" style="border: 1px solid transparent;width: 10%"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;margin-top: 10px;margin-bottom: 10px;">
+                                            <span>
+                                                <div style="width:20px; height:20px; border: 1px solid #000; display: inline-block;"></div>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td style="margin-left: 10px;border: 1px solid transparent; width: 90%">
+                                        Igualmente aceito que as comunicações por correio electrónico, feitas nos termos do parágrafo anterior, se revestem
+                                        de valor probatório e a respetiva autoria é atribuída ao remetente, independentemente dos nomes dos colaboradores
+                                        nelas constantes.
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="text-center col-4" style="border: 1px solid transparent;width: 10%"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;margin-top: 10px;margin-bottom: 10px;">
+                                            <span>
+                                                <div style="width:20px; height:20px; border: 1px solid #000; display: inline-block;"></div>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td style="margin-left: 10px;border: 1px solid transparent; width: 90%">
+                                        Comprometo-me a disponibilizar o RCM aprovado no país de origem ou outro documento necessário à avaliação da
+                                        presente AUE, caso seja solicitado pelo Infarmed.
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="text-center col-4" style="border: 1px solid transparent;width: 10%"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;margin-top: 10px;margin-bottom: 10px;">
+                                            <span>
+                                                <div style="width:20px; height:20px; border: 1px solid #000; display: inline-block;"></div>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td style="margin-left: 10px;border: 1px solid transparent; width: 90%">
+                                        O presente pedido de AUE reuniu todas as autorizações internas necessárias à utilização deste medicamento nesta
+                                        instituição de saúde.
+                                    </td>
+                            </tr>
+                            <tr t-att-class="'o_line_section'">
+                                    <td class="text-center col-4" style="border: 1px solid transparent;width: 10%"> 
+                                        <div style="margin-left: 10px;margin-right: 10px;margin-top: 10px;margin-bottom: 10px;">
+                                            <span>
+                                                <div style="width:20px; height:20px; border: 1px solid #000; display: inline-block;"></div>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td style="margin-left: 10px;border: 1px solid transparent; width: 90%">
+                                        Responsabilizo-me pelo conteúdo deste formulário.
+                                    </td>
+                            </tr>
+
+
+
+                    </tbody>
+                </table>
+
+                <h5 class="mt-4" style="color: rgb(0, 153, 204);">Certificado de importação</h5>
+                A utilização de medicamentos contendo substâncias controladas carece ainda da emissão de <span style="color: rgb(0, 153, 204);text-decoration: underline;">Certificado de importação</span>.
+                <h5 class="mt-4" style="color: rgb(0, 153, 204);">CAUL</h5>
+                A utilização de derivados do sangue ou plasma, vacinas ou medicamentos contendo albumina humana como excipiente
+carece ainda da emissão de <span style="color: rgb(0, 153, 204);text-decoration: underline;">Certificado de Autorização de Utilização de Lote</span> (CAUL).
+
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+
+
+
+            </div>
+       </t> 
+    </template>
+
+
+    <template id="report_aue">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="sic_nmvs_connector.report_aue_document" t-lang="o.partner_id.lang"/>
+            </t>
+        </t>
+    </template>
+</odoo>

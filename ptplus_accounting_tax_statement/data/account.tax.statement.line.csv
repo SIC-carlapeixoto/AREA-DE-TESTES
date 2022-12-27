@@ -1,0 +1,130 @@
+id,statement_id/id,sequence,name,description,source_type,source,tax_tag_ids/id,value_type,value_invert,auxiliary
+tax_stmt_periodic_c001,tax_stmt_periodic,10,C001,Transm. bens/serv. c/ liquid. imp. à tx. red. [Base],domain,,ptplus.tax_tag_iva_dp_1,base_bal_normal,0,0
+tax_stmt_periodic_c002,tax_stmt_periodic,40,C002,Transm. bens/serv. c/ liquid. imp. à tx. red. [Imp.],domain,,ptplus.tax_tag_iva_dp_2,tax_bal_normal,0,0
+tax_stmt_periodic_c003,tax_stmt_periodic,70,C003,Transm. bens/serv. c/ liquid. imp. à tx. normal [Base],domain,,ptplus.tax_tag_iva_dp_3,base_bal_normal,0,0
+tax_stmt_periodic_c004,tax_stmt_periodic,100,C004,Transm. bens/serv. c/ liquid. imp. à tx. normal [Imp.],domain,,ptplus.tax_tag_iva_dp_4,tax_bal_normal,0,0
+tax_stmt_periodic_c005,tax_stmt_periodic,130,C005,Transm. bens/serv. c/ liquid. imp. à tx. interm. [Base],domain,,ptplus.tax_tag_iva_dp_5,base_bal_normal,0,0
+tax_stmt_periodic_c006,tax_stmt_periodic,160,C006,Transm. bens/serv. c/ liquid. imp. à tx. interm. [Imp.],domain,,ptplus.tax_tag_iva_dp_6,tax_bal_normal,0,0
+tax_stmt_periodic_c007,tax_stmt_periodic,190,C007,Transm. bens/serv. isentas ou não trib. intracomunitárias (decl. recap.),expr,recapitulative_total,,,0,0
+tax_stmt_periodic_c007_check,tax_stmt_periodic,195,C007-VRF,Recálculo do campo 7 para verificação e controlo,domain,,ptplus.tax_tag_iva_dp_7,base_bal_normal,0,1
+tax_stmt_periodic_c008,tax_stmt_periodic,200,C008,Transm. bens/serv. isentas ou não trib. c/ direito dedução,domain,,ptplus.tax_tag_iva_dp_8,base_bal_normal,0,0
+tax_stmt_periodic_c009,tax_stmt_periodic,210,C009,Transm. bens/serv. isentas ou não trib. s/ direito dedução,domain,,ptplus.tax_tag_iva_dp_9,base_bal_normal,0,0
+tax_stmt_periodic_c010,tax_stmt_periodic,220,C010,Aquis. intracom. bens/oper. assim. - Total [Base],expr,C012+C014+C015,,,0,0
+tax_stmt_periodic_c011,tax_stmt_periodic,230,C011,Aquis. intracom. bens/oper. assim. - Total [Imp.],expr,C013,,,0,0
+tax_stmt_periodic_c012,tax_stmt_periodic,240,C012,Aquis. intracom. bens/oper. assim. - imp. liquid. p/ declarante [Base],domain,,ptplus.tax_tag_iva_dp_12,base_bal_normal,1,0
+tax_stmt_periodic_c013,tax_stmt_periodic,250,C013,Aquis. intracom. bens/oper. assim. - imp. liquid. p/ declarante [Imp.],domain,,ptplus.tax_tag_iva_dp_13,tax_bal_normal,0,0
+tax_stmt_periodic_c014,tax_stmt_periodic,260,C014,Aquis. intracom. bens/oper. assim. -  art. 15º CIVA ou RITI,domain,,ptplus.tax_tag_iva_dp_14,base_bal_normal,1,0
+tax_stmt_periodic_c015,tax_stmt_periodic,270,C015,"Aquis. intracom. bens/oper. assim. - nºs 3, 4 e 5. art. 22º RITI",domain,,ptplus.tax_tag_iva_dp_15,base_bal_normal,1,0
+tax_stmt_periodic_c016,tax_stmt_periodic,280,C016,Prest. serv. suj. passiv. intracom. c/ imp. liquid. declarante [Base],domain,,ptplus.tax_tag_iva_dp_16,base_bal_normal,1,0
+tax_stmt_periodic_c017,tax_stmt_periodic,290,C017,Prest. serv. suj. passiv. intracom. c/ imp. liquid. declarante [Imp.],domain,,ptplus.tax_tag_iva_dp_17,tax_bal_normal,0,0
+tax_stmt_periodic_c018,tax_stmt_periodic,300,C018,Importação de bens c/imposto liquidado pelo declarante [Base],expr,paid_tax_import_base,,,0,0
+tax_stmt_periodic_c019,tax_stmt_periodic,310,C019,Importação de bens c/imposto liquidado pelo declarante [Imp.],expr,paid_tax_import_amount,,,0,0
+tax_stmt_periodic_c020,tax_stmt_periodic,320,C020,Imp. dedut. - Imobilizado,expr,C020_AUTO+deduct_tax_asset,,,0,0
+tax_stmt_periodic_c020_auto,tax_stmt_periodic,325,C020_AUTO,Imp. dedut. - Imobilizado [Calcul.],domain,,ptplus.tax_tag_iva_dp_20,tax_bal_normal,1,1
+tax_stmt_periodic_c020_adic,tax_stmt_periodic,327,C020_ADIC,Imp. dedut. - Imobilizado [Adicion.],expr,deduct_tax_asset,,,0,1
+tax_stmt_periodic_c021,tax_stmt_periodic,330,C021,Imp. dedut. - Existências à tx. reduzida,expr,C021_AUTO+deduct_tax_invent_red,,,0,0
+tax_stmt_periodic_c021_auto,tax_stmt_periodic,335,C021_AUTO,Imp. dedut. - Existências à tx. reduzida [Calcul.],domain,,ptplus.tax_tag_iva_dp_21,tax_bal_normal,1,1
+tax_stmt_periodic_c021_adic,tax_stmt_periodic,337,C021_ADIC,Imp. dedut. - Existências à tx. reduzida [Adicion.],expr,deduct_tax_invent_red,,,0,1
+tax_stmt_periodic_c022,tax_stmt_periodic,340,C022,Imp. dedut. - Existências à tx. normal,expr,C022_AUTO+deduct_tax_invent_std,,,0,0
+tax_stmt_periodic_c022_auto,tax_stmt_periodic,345,C022_AUTO,Imp. dedut. - Existências à tx. normal [Calcul.],domain,,ptplus.tax_tag_iva_dp_22,tax_bal_normal,1,1
+tax_stmt_periodic_c022_adic,tax_stmt_periodic,347,C022_ADIC,Imp. dedut. - Existências à tx. normal [Adicion.],expr,deduct_tax_invent_std,,,0,1
+tax_stmt_periodic_c023,tax_stmt_periodic,350,C023,Imp. dedut. - Existências à tx. intermédia,expr,C023_AUTO+deduct_tax_invent_interm,,,0,0
+tax_stmt_periodic_c023_auto,tax_stmt_periodic,355,C023_AUTO,Imp. dedut. - Existências à tx. intermédia [Calcul.],domain,,ptplus.tax_tag_iva_dp_23,tax_bal_normal,1,1
+tax_stmt_periodic_c023_adic,tax_stmt_periodic,357,C023_ADIC,Imp. dedut. - Existências à tx. intermédia [Adicion.],expr,deduct_tax_invent_interm,,,0,1
+tax_stmt_periodic_c024,tax_stmt_periodic,360,C024,Imp. dedut. - Outros bens e serviços,expr,C024_AUTO+deduct_tax_ogs,,,0,0
+tax_stmt_periodic_c024_auto,tax_stmt_periodic,365,C024_AUTO,Imp. dedut. - Outros bens e serviços [Calcul.],domain,,ptplus.tax_tag_iva_dp_24,tax_bal_normal,1,1
+tax_stmt_periodic_c024_adic,tax_stmt_periodic,367,C024_ADIC,Imp. dedut. - Outros bens e serviços [Adicion.],expr,deduct_tax_ogs,,,0,1
+tax_stmt_periodic_c040,tax_stmt_periodic,370,C040,"Regularizações [Imp. a favor suj. pass.]",domain,,ptplus.tax_tag_iva_dp_40,tax_bal_regularization,1,0
+tax_stmt_periodic_c041,tax_stmt_periodic,380,C041,"Regularizações [Imp. a favor Estado]",domain,,ptplus.tax_tag_iva_dp_41,tax_bal_regularization,0,0
+tax_stmt_periodic_c061,tax_stmt_periodic,420,C061,Excesso a reportar do período anterior,expr,previous_period_excess,,,0,0
+tax_stmt_periodic_c065,tax_stmt_periodic,430,C065,Anexo (ver quadro 3) [Imp.dedutível],expr,annex_r1_favourable_tax,,,0,0
+tax_stmt_periodic_c066,tax_stmt_periodic,440,C066,Anexo (ver quadro 3) [Imp.liquidado],expr,annex_r1_unfavourable_tax,,,0,0
+tax_stmt_periodic_c067,tax_stmt_periodic,450,C067,Anexo (ver quadro 3) [Imp.dedutível],expr,annex_r2_favourable_tax,,,0,0
+tax_stmt_periodic_c068,tax_stmt_periodic,460,C068,Anexo (ver quadro 3) [Imp.liquidado],expr,annex_r2_unfavourable_tax,,,0,0
+tax_stmt_periodic_c090,tax_stmt_periodic,470,C090,Total da base tributável,expr,C001+C003+C005+C007+C008+C009+C010+C016+C018,,,0,0
+tax_stmt_periodic_c091,tax_stmt_periodic,480,C091,Total do imposto a favor do sujeito passivo,expr,C020+C021+C022+C023+C024+C040+C061+C065+C067,,,0,0
+tax_stmt_periodic_c092,tax_stmt_periodic,490,C092,Total do imposto a favor do Estado,expr,C002+C004+C006+C011+C017+C019+C041+C066+C068,,,0,0
+tax_stmt_periodic_c093,tax_stmt_periodic,500,C093,Imposto a entregar ao Estado,expr,C092-C091 if C092 > C091 else 0.00,,,0,0
+tax_stmt_periodic_c094,tax_stmt_periodic,510,C094,Crédito de imposto a recuperar,expr,C091-C092 if C091 > C092 else 0.00,,,0,0
+tax_stmt_periodic_c095,tax_stmt_periodic,520,C095,Solicito Reeembolso,expr,C094 if C094 and request_refund else '',,,0,0
+tax_stmt_periodic_c096,tax_stmt_periodic,530,C096,Excesso a reportar,expr,C094 if C094 and not request_refund else '',,,0,0
+tax_stmt_periodic_c097,tax_stmt_periodic,540,C097,"A - Operação localizadas em Portugal em que, na qualidade de adquirente, liquidou o IVA devido (Valores das bases tributáveis, incluídos nos campos 1,5 e 3) - Efetuadas por entidades residentes em países comunitários (não inclui as operações mencionadas no campo 16)",domain,,ptplus.tax_tag_iva_dp_97_r65,base_bal_normal,1,0
+tax_stmt_periodic_c098,tax_stmt_periodic,550,C098,"A - Operação localizadas em Portugal em que, na qualidade de adquirente, liquidou o IVA devido (Valores das bases tributáveis, incluídos nos campos 1,5 e 3) - Efetuadas por entidades residentes em países ou territórios terceiros",domain,,ptplus.tax_tag_iva_dp_98_r66,base_bal_normal,1,0
+tax_stmt_periodic_c099,tax_stmt_periodic,560,C099,"B - Operações em que liquidou o IVA devido por aplicação da regra de inversão do sujeito passivo (Valores das bases tributáveis, incluídos nos campos 1, 5 e 3) - Ouro (Decreto-Lei 362/99)",domain,,ptplus.tax_tag_iva_dp_99_r67,base_bal_normal,1,0
+tax_stmt_periodic_c100,tax_stmt_periodic,570,C100,"B - Operações em que liquidou o IVA devido por aplicação da regra de inversão do sujeito passivo (Valores das bases tributáveis, incluídos nos campos 1, 5 e 3) - Aquisição de imóveis com renúncia à isenção (Decreto-Lei 21/2007)",domain,,ptplus.tax_tag_iva_dp_100_r68,base_bal_normal,1,0
+tax_stmt_periodic_c101,tax_stmt_periodic,580,C101,"B - Operações em que liquidou o IVA devido por aplicação da regra de inversão do sujeito passivo (Valores das bases tributáveis, incluídos nos campos 1, 5 e 3) - Sucata [Alínea i) do n.º 1]",domain,,ptplus.tax_tag_iva_dp_101_r69,base_bal_normal,1,0
+tax_stmt_periodic_c102,tax_stmt_periodic,590,C102,"B - Operações em que liquidou o IVA devido por aplicação da regra de inversão do sujeito passivo (Valores das bases tributáveis, incluídos nos campos 1, 5 e 3) - Serviços de construção civil [Alínea j) do n.º 1 do art.º 2 do CIVA]",domain,,ptplus.tax_tag_iva_dp_102_r70,base_bal_normal,1,0
+tax_stmt_periodic_c103,tax_stmt_periodic,600,C103,"C - Operações referidas nas alíneas f) e g) do n.º 3 do artigo 3.º e alíneas a) e b) do n.º 2 do artigo 4.º do CIVA (Valores das bases tributáveis, incluídos nos campos 1, 5 e 3) - Se efetuou operações desta natureza, indique o seu valor",domain,,ptplus.tax_tag_iva_dp_103_r71,base_bal_normal,1,0
+tax_stmt_periodic_c104,tax_stmt_periodic,610,C104,"D - Operações referidas nas alíneas a) , b) e c) do artigo 42.º do CIVA (Valores das bases tributáveis, incluídos nos campos 1, 5 , 3 e 9) - Se efetuou operações desta natureza, indique o seu valor",domain,,ptplus.tax_tag_iva_dp_104_r72,base_bal_normal,1,0
+tax_stmt_periodic_c105,tax_stmt_periodic,620,C105,"B - Operações em que liquidou o IVA devido por aplicação da regra de inversão do sujeito passivo (Valores das bases tributáveis, incluídos nos campos 1, 5 e 3) - Emissão de gases com efeito de estufa [Alínea l) do n.º 1 do art.º 2.º do CIVA]",domain,,ptplus.tax_tag_iva_dp_105_r73,base_bal_normal,1,0
+tax_stmt_periodic_c106,tax_stmt_periodic,630,C106,SOMA DO QUADRO 06-A (97 + .... + 105),expr,C097+C098+C099+C100+C101+C102+C105+C103+C104,,,0,0
+tax_stmt_periodic_annex_r_c001,tax_stmt_periodic_annex_r,10,C001,Transm. bens/serv. c/ liquid. imp. à tx. red. [Base],domain,,ptplus.tax_tag_iva_dp_1,base_bal_normal,0,0
+tax_stmt_periodic_annex_r_c002,tax_stmt_periodic_annex_r,40,C002,Transm. bens/serv. c/ liquid. imp. à tx. red. [Imp.],domain,,ptplus.tax_tag_iva_dp_2,tax_bal_normal,0,0
+tax_stmt_periodic_annex_r_c003,tax_stmt_periodic_annex_r,70,C003,Transm. bens/serv. c/ liquid. imp. à tx. normal [Base],domain,,ptplus.tax_tag_iva_dp_3,base_bal_normal,0,0
+tax_stmt_periodic_annex_r_c004,tax_stmt_periodic_annex_r,100,C004,Transm. bens/serv. c/ liquid. imp. à tx. normal [Imp.],domain,,ptplus.tax_tag_iva_dp_4,tax_bal_normal,0,0
+tax_stmt_periodic_annex_r_c005,tax_stmt_periodic_annex_r,130,C005,Transm. bens/serv. c/ liquid. imp. à tx. interm. [Base],domain,,ptplus.tax_tag_iva_dp_5,base_bal_normal,0,0
+tax_stmt_periodic_annex_r_c006,tax_stmt_periodic_annex_r,160,C006,Transm. bens/serv. c/ liquid. imp. à tx. interm. [Imp.],domain,,ptplus.tax_tag_iva_dp_6,tax_bal_normal,0,0
+tax_stmt_periodic_annex_r_c007,tax_stmt_periodic_annex_r,190,C007,Transm. bens/serv. isentas ou não trib. intracomunitárias (decl. recap.),domain,,ptplus.tax_tag_iva_dp_7,base_bal_normal,0,0
+tax_stmt_periodic_annex_r_c008,tax_stmt_periodic_annex_r,200,C008,Transm. bens/serv. isentas ou não trib. c/ direito dedução,domain,,ptplus.tax_tag_iva_dp_8,base_bal_normal,0,0
+tax_stmt_periodic_annex_r_c009,tax_stmt_periodic_annex_r,210,C009,Transm. bens/serv. isentas ou não trib. s/ direito dedução,domain,,ptplus.tax_tag_iva_dp_9,base_bal_normal,0,0
+tax_stmt_periodic_annex_r_c010,tax_stmt_periodic_annex_r,220,C010,Aquis. intracom. bens/oper. assim. - Total [Base],expr,C012+C014+C015,,,0,0
+tax_stmt_periodic_annex_r_c011,tax_stmt_periodic_annex_r,230,C011,Aquis. intracom. bens/oper. assim. - Total [Imp.],expr,C013,,,0,0
+tax_stmt_periodic_annex_r_c012,tax_stmt_periodic_annex_r,240,C012,Aquis. intracom. bens/oper. assim. - imp. liquid. p/ declarante [Base],domain,,ptplus.tax_tag_iva_dp_12,base_bal_normal,1,0
+tax_stmt_periodic_annex_r_c013,tax_stmt_periodic_annex_r,250,C013,Aquis. intracom. bens/oper. assim. - imp. liquid. p/ declarante [Imp.],domain,,ptplus.tax_tag_iva_dp_13,tax_bal_normal,0,0
+tax_stmt_periodic_annex_r_c014,tax_stmt_periodic_annex_r,260,C014,Aquis. intracom. bens/oper. assim. -  art. 15º CIVA ou RITI,domain,,ptplus.tax_tag_iva_dp_14,base_bal_normal,1,0
+tax_stmt_periodic_annex_r_c015,tax_stmt_periodic_annex_r,270,C015,"Aquis. intracom. bens/oper. assim. - nºs 3, 4 e 5. art. 22º RITI",domain,,ptplus.tax_tag_iva_dp_15,base_bal_normal,1,0
+tax_stmt_periodic_annex_r_c016,tax_stmt_periodic_annex_r,280,C016,Prest. serv. suj. passiv. intracom. c/ imp. liquid. declarante [Base],domain,,ptplus.tax_tag_iva_dp_16,base_bal_normal,1,0
+tax_stmt_periodic_annex_r_c017,tax_stmt_periodic_annex_r,290,C017,Prest. serv. suj. passiv. intracom. c/ imp. liquid. declarante [Imp.],domain,,ptplus.tax_tag_iva_dp_17,tax_bal_normal,0,0
+tax_stmt_periodic_annex_r_c018,tax_stmt_periodic_annex_r,300,C018,Importação de bens c/imposto liquidado pelo declarante [Base],expr,paid_tax_import_base,,,0,0
+tax_stmt_periodic_annex_r_c019,tax_stmt_periodic_annex_r,310,C019,Importação de bens c/imposto liquidado pelo declarante [Imp.],expr,paid_tax_import_amount,,,0,0
+tax_stmt_periodic_annex_r_c020,tax_stmt_periodic_annex_r,320,C020,Imp. dedut. - Imobilizado,expr,C020_AUTO+deduct_tax_asset,,,0,0
+tax_stmt_periodic_annex_r_c020_auto,tax_stmt_periodic_annex_r,325,C020_AUTO,Imp. dedut. - Imobilizado [Calcul.],domain,,ptplus.tax_tag_iva_dp_20,tax_bal_normal,1,1
+tax_stmt_periodic_annex_r_c020_adic,tax_stmt_periodic_annex_r,327,C020_ADIC,Imp. dedut. - Imobilizado [Adicion.],expr,deduct_tax_asset,,,0,1
+tax_stmt_periodic_annex_r_c021,tax_stmt_periodic_annex_r,330,C021,Imp. dedut. - Existências à tx. reduzida,expr,C021_AUTO+deduct_tax_invent_red,,,0,0
+tax_stmt_periodic_annex_r_c021_auto,tax_stmt_periodic_annex_r,335,C021_AUTO,Imp. dedut. - Existências à tx. reduzida [Calcul.],domain,,ptplus.tax_tag_iva_dp_21,tax_bal_normal,1,1
+tax_stmt_periodic_annex_r_c021_adic,tax_stmt_periodic_annex_r,337,C021_ADIC,Imp. dedut. - Existências à tx. reduzida [Adicion.],expr,deduct_tax_invent_red,,,0,1
+tax_stmt_periodic_annex_r_c022,tax_stmt_periodic_annex_r,340,C022,Imp. dedut. - Existências à tx. normal,expr,C022_AUTO+deduct_tax_invent_std,,,0,0
+tax_stmt_periodic_annex_r_c022_auto,tax_stmt_periodic_annex_r,345,C022_AUTO,Imp. dedut. - Existências à tx. normal [Calcul.],domain,,ptplus.tax_tag_iva_dp_22,tax_bal_normal,1,1
+tax_stmt_periodic_annex_r_c022_adic,tax_stmt_periodic_annex_r,347,C022_ADIC,Imp. dedut. - Existências à tx. normal [Adicion.],expr,deduct_tax_invent_std,,,0,1
+tax_stmt_periodic_annex_r_c023,tax_stmt_periodic_annex_r,350,C023,Imp. dedut. - Existências à tx. intermédia,expr,C023_AUTO+deduct_tax_invent_interm,,,0,0
+tax_stmt_periodic_annex_r_c023_auto,tax_stmt_periodic_annex_r,355,C023_AUTO,Imp. dedut. - Existências à tx. intermédia [Calcul.],domain,,ptplus.tax_tag_iva_dp_23,tax_bal_normal,1,1
+tax_stmt_periodic_annex_r_c023_adic,tax_stmt_periodic_annex_r,357,C023_ADIC,Imp. dedut. - Existências à tx. intermédia [Adicion.],expr,deduct_tax_invent_interm,,,0,1
+tax_stmt_periodic_annex_r_c024,tax_stmt_periodic_annex_r,360,C024,Imp. dedut. - Outros bens e serviços,expr,C024_AUTO+deduct_tax_ogs,,,0,0
+tax_stmt_periodic_annex_r_c024_auto,tax_stmt_periodic_annex_r,365,C024_AUTO,Imp. dedut. - Outros bens e serviços [Calcul.],domain,,ptplus.tax_tag_iva_dp_24,tax_bal_normal,1,1
+tax_stmt_periodic_annex_r_c024_adic,tax_stmt_periodic_annex_r,367,C024_ADIC,Imp. dedut. - Outros bens e serviços [Adicion.],expr,deduct_tax_ogs,,,0,1
+tax_stmt_periodic_annex_r_c062,tax_stmt_periodic_annex_r,370,C062,Total da base tributável,expr,C001+C003+C005+C007+C008+C009+C010+C016+C018,,,0,0
+tax_stmt_periodic_annex_r_c063,tax_stmt_periodic_annex_r,380,C063,Total do imposto a favor do sujeito passivo,expr,C020+C021+C022+C023+C024,,,0,0
+tax_stmt_periodic_annex_r_c064,tax_stmt_periodic_annex_r,390,C064,Total do imposto a favor do Estado,expr,C002+C004+C006+C011+C017+C019,,,0,0
+tax_stmt_periodic_annex_r_c065,tax_stmt_periodic_annex_r,400,C065,"A - Operação localizadas em Portugal em que, na qualidade de adquirente, liquidou o IVA devido (Valores das bases tributáveis, incluídos nos campos 1,5 e 3) - Efetuadas por entidades residentes em países comunitários (não inclui as operações mencionadas no campo 16)",domain,,ptplus.tax_tag_iva_dp_97_r65,base_bal_normal,1,0
+tax_stmt_periodic_annex_r_c066,tax_stmt_periodic_annex_r,410,C066,"A - Operação localizadas em Portugal em que, na qualidade de adquirente, liquidou o IVA devido (Valores das bases tributáveis, incluídos nos campos 1,5 e 3) - Efetuadas por entidades residentes em países ou territórios terceiros",domain,,ptplus.tax_tag_iva_dp_98_r66,base_bal_normal,1,0
+tax_stmt_periodic_annex_r_c067,tax_stmt_periodic_annex_r,420,C067,"B - Operações em que liquidou o IVA devido por aplicação da regra de inversão do sujeito passivo (Valores das bases tributáveis, incluídos nos campos 1, 5 e 3) - Ouro (Decreto-Lei 362/99)",domain,,ptplus.tax_tag_iva_dp_99_r67,base_bal_normal,1,0
+tax_stmt_periodic_annex_r_c068,tax_stmt_periodic_annex_r,430,C068,"B - Operações em que liquidou o IVA devido por aplicação da regra de inversão do sujeito passivo (Valores das bases tributáveis, incluídos nos campos 1, 5 e 3) - Aquisição de imóveis com renúncia à isenção (Decreto-Lei 21/2007)",domain,,ptplus.tax_tag_iva_dp_100_r68,base_bal_normal,1,0
+tax_stmt_periodic_annex_r_c069,tax_stmt_periodic_annex_r,440,C069,"B - Operações em que liquidou o IVA devido por aplicação da regra de inversão do sujeito passivo (Valores das bases tributáveis, incluídos nos campos 1, 5 e 3) - Sucata [Alínea i) do n.º 1]",domain,,ptplus.tax_tag_iva_dp_101_r69,base_bal_normal,1,0
+tax_stmt_periodic_annex_r_c070,tax_stmt_periodic_annex_r,450,C070,"B - Operações em que liquidou o IVA devido por aplicação da regra de inversão do sujeito passivo (Valores das bases tributáveis, incluídos nos campos 1, 5 e 3) - Serviços de construção civil [Alínea j) do n.º 1 do art.º 2 do CIVA]",domain,,ptplus.tax_tag_iva_dp_102_r70,base_bal_normal,1,0
+tax_stmt_periodic_annex_r_c071,tax_stmt_periodic_annex_r,460,C071,"C - Operações referidas nas alíneas f) e g) do n.º 3 do artigo 3.º e alíneas a) e b) do n.º 2 do artigo 4.º do CIVA (Valores das bases tributáveis, incluídos nos campos 1, 5 e 3) - Se efetuou operações desta natureza, indique o seu valor",domain,,ptplus.tax_tag_iva_dp_103_r71,base_bal_normal,1,0
+tax_stmt_periodic_annex_r_c072,tax_stmt_periodic_annex_r,470,C072,"D - Operações referidas nas alíneas a) , b) e c) do artigo 42.º do CIVA (Valores das bases tributáveis, incluídos nos campos 1, 5 , 3 e 9) - Se efetuou operações desta natureza, indique o seu valor",domain,,ptplus.tax_tag_iva_dp_104_r72,base_bal_normal,1,0
+tax_stmt_periodic_annex_r_c073,tax_stmt_periodic_annex_r,480,C073,"B - Operações em que liquidou o IVA devido por aplicação da regra de inversão do sujeito passivo (Valores das bases tributáveis, incluídos nos campos 1, 5 e 3) - Emissão de gases com efeito de estufa [Alínea l) do n.º 1 do art.º 2.º do CIVA]",domain,,ptplus.tax_tag_iva_dp_105_r73,base_bal_normal,1,0
+tax_stmt_periodic_annex_r_c074,tax_stmt_periodic_annex_r,900,C074,SOMA DO QUADRO 06-A (65+ .... + 73),expr,C065+C066+C067+C068+C069+C070+C071+C072+C073,,,0,0
+tax_stmt_periodic_paid_tax_import_c018,tax_stmt_periodic_paid_tax_import,305,C018,Importação de bens c/imposto liquidado pelo declarante [Base],domain,,ptplus.tax_tag_iva_dp_18,base_bal_normal,1,0
+tax_stmt_periodic_paid_tax_import_c019,tax_stmt_periodic_paid_tax_import,315,C019,Importação de bens c/imposto liquidado pelo declarante [Imp.],domain,,ptplus.tax_tag_iva_dp_19,tax_bal_normal,0,0
+tax_stmt_periodic_paid_tax_import_c020,tax_stmt_periodic_paid_tax_import,320,C020,Imp. dedut. - Imobilizado,domain,,ptplus.tax_tag_iva_dp_20_iblid,tax_bal_normal,1,0
+tax_stmt_periodic_paid_tax_import_c022,tax_stmt_periodic_paid_tax_import,340,C022,Imp. dedut. - Existências à tx. normal,domain,,ptplus.tax_tag_iva_dp_22_iblid,tax_bal_normal,1,0
+tax_stmt_vat_exploded_view_1_root,tax_stmt_vat_exploded_view_1,10,IVA,IVA,expr,IVAE+IVAO+IVAI,,,0,0
+tax_stmt_vat_exploded_view_1_gds,tax_stmt_vat_exploded_view_1,1000,IVAE,⋅ ⋅ ⋅ Existências,domain,"[('pt_genre', '=', 'IVA'), ('pt_vat_subject', '=', 'stock')]",,tax_bal_total,0,0
+tax_stmt_vat_exploded_view_1_gds_cnt,tax_stmt_vat_exploded_view_1,1100,IVAEC,⋅ ⋅ ⋅ ⋅ ⋅ ⋅ Continente,domain,"[('pt_genre', '=', 'IVA'), ('pt_vat_subject', '=', 'stock'), ('pt_vat_country_region', '=', 'PT')]",,tax_bal_total,0,0
+tax_stmt_vat_exploded_view_1_gds_azo,tax_stmt_vat_exploded_view_1,1200,IVAEA,⋅ ⋅ ⋅ ⋅ ⋅ ⋅ Açores,domain,"[('pt_genre', '=', 'IVA'), ('pt_vat_subject', '=', 'stock'), ('pt_vat_country_region', '=', 'PT-AC')]",,tax_bal_total,0,0
+tax_stmt_vat_exploded_view_1_gds_mad,tax_stmt_vat_exploded_view_1,1300,IVAEM,⋅ ⋅ ⋅ ⋅ ⋅ ⋅ Madeira,domain,"[('pt_genre', '=', 'IVA'), ('pt_vat_subject', '=', 'stock'), ('pt_vat_country_region', '=', 'PT-MA')]",,tax_bal_total,0,0
+tax_stmt_vat_exploded_view_1_gds_int,tax_stmt_vat_exploded_view_1,1400,IVAEI,⋅ ⋅ ⋅ ⋅ ⋅ ⋅ Intracomunitário,domain,"[('pt_genre', '=', 'IVA'), ('pt_vat_subject', '=', 'stock'), ('pt_vat_country_region', '=', 'INTRA')]",,tax_bal_total,0,0
+tax_stmt_vat_exploded_view_1_gds_ext,tax_stmt_vat_exploded_view_1,1500,IVAEE,⋅ ⋅ ⋅ ⋅ ⋅ ⋅ Extracomunitário,domain,"[('pt_genre', '=', 'IVA'), ('pt_vat_subject', '=', 'stock'), ('pt_vat_country_region', '=', 'EXTRA')]",,tax_bal_total,0,0
+tax_stmt_vat_exploded_view_1_ogs,tax_stmt_vat_exploded_view_1,2000,IVAO,⋅ ⋅ ⋅ Outros bens e serviços,domain,"[('pt_genre', '=', 'IVA'), ('pt_vat_subject', '=', 'obs')]",,tax_bal_total,0,0
+tax_stmt_vat_exploded_view_1_ogs_cnt,tax_stmt_vat_exploded_view_1,2100,IVAOC,⋅ ⋅ ⋅ ⋅ ⋅ ⋅ Continente,domain,"[('pt_genre', '=', 'IVA'), ('pt_vat_subject', '=', 'obs'), ('pt_vat_country_region', '=', 'PT')]",,tax_bal_total,0,0
+tax_stmt_vat_exploded_view_1_ogs_azo,tax_stmt_vat_exploded_view_1,2200,IVAOA,⋅ ⋅ ⋅ ⋅ ⋅ ⋅ Açores,domain,"[('pt_genre', '=', 'IVA'), ('pt_vat_subject', '=', 'obs'), ('pt_vat_country_region', '=', 'PT-AC')]",,tax_bal_total,0,0
+tax_stmt_vat_exploded_view_1_ogs_mad,tax_stmt_vat_exploded_view_1,2300,IVAOM,⋅ ⋅ ⋅ ⋅ ⋅ ⋅ Madeira,domain,"[('pt_genre', '=', 'IVA'), ('pt_vat_subject', '=', 'obs'), ('pt_vat_country_region', '=', 'PT-MA')]",,tax_bal_total,0,0
+tax_stmt_vat_exploded_view_1_ogs_int,tax_stmt_vat_exploded_view_1,2400,IVAOI,⋅ ⋅ ⋅ ⋅ ⋅ ⋅ Intracomunitário,domain,"[('pt_genre', '=', 'IVA'), ('pt_vat_subject', '=', 'obs'), ('pt_vat_country_region', '=', 'INTRA')]",,tax_bal_total,0,0
+tax_stmt_vat_exploded_view_1_ogs_ext,tax_stmt_vat_exploded_view_1,2500,IVAOE,⋅ ⋅ ⋅ ⋅ ⋅ ⋅ Extracomunitário,domain,"[('pt_genre', '=', 'IVA'), ('pt_vat_subject', '=', 'obs'), ('pt_vat_country_region', '=', 'EXTRA')]",,tax_bal_total,0,0
+tax_stmt_vat_exploded_view_1_ass,tax_stmt_vat_exploded_view_1,3000,IVAI,⋅ ⋅ ⋅ Imobilizado,domain,"[('pt_genre', '=', 'IVA'), ('pt_vat_subject', '=', 'asset')]",,tax_bal_total,0,0
+tax_stmt_vat_exploded_view_1_ass_cnt,tax_stmt_vat_exploded_view_1,3100,IVAIC,⋅ ⋅ ⋅ ⋅ ⋅ ⋅ Continente,domain,"[('pt_genre', '=', 'IVA'), ('pt_vat_subject', '=', 'asset'), ('pt_vat_country_region', '=', 'PT')]",,tax_bal_total,0,0
+tax_stmt_vat_exploded_view_1_ass_azo,tax_stmt_vat_exploded_view_1,3200,IVAIA,⋅ ⋅ ⋅ ⋅ ⋅ ⋅ Açores,domain,"[('pt_genre', '=', 'IVA'), ('pt_vat_subject', '=', 'asset'), ('pt_vat_country_region', '=', 'PT-AC')]",,tax_bal_total,0,0
+tax_stmt_vat_exploded_view_1_ass_mad,tax_stmt_vat_exploded_view_1,3300,IVAIM,⋅ ⋅ ⋅ ⋅ ⋅ ⋅ Madeira,domain,"[('pt_genre', '=', 'IVA'), ('pt_vat_subject', '=', 'asset'), ('pt_vat_country_region', '=', 'PT-MA')]",,tax_bal_total,0,0
+tax_stmt_vat_exploded_view_1_ass_int,tax_stmt_vat_exploded_view_1,3400,IVAII,⋅ ⋅ ⋅ ⋅ ⋅ ⋅ Intracomunitário,domain,"[('pt_genre', '=', 'IVA'), ('pt_vat_subject', '=', 'asset'), ('pt_vat_country_region', '=', 'INTRA')]",,tax_bal_total,0,0
+tax_stmt_vat_exploded_view_1_ass_ext,tax_stmt_vat_exploded_view_1,3500,IVAIE,⋅ ⋅ ⋅ ⋅ ⋅ ⋅ Extracomunitário,domain,"[('pt_genre', '=', 'IVA'), ('pt_vat_subject', '=', 'asset'), ('pt_vat_country_region', '=', 'EXTRA')]",,tax_bal_total,0,0

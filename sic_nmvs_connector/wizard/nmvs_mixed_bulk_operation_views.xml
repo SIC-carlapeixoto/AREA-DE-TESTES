@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+
+        <record id="nmvs_mixed_bulk_operation_form" model="ir.ui.view">
+              <field name="name">NMVS Mixed Operations</field>
+              <field name="model">nmvs.mixed.bulk.operation</field>
+              <field name="arch" type="xml">
+                  <form>
+                      <header>
+                          <button
+                              string="Executar"
+                              name="execute_operation"
+                              type="object"
+                              class="oe_highlight"
+                          />
+                      </header>
+                      <sheet string="Operação">
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" placeholder="Nome..." readonly="1"/>
+                            </h1>
+                        </div>
+
+                          <notebook>
+                              <page string="Operações">
+                                <field name="operation_ids" mode="tree" nolabel="1" required="1">
+                                  <tree context="{'mixed_bulk_operation': parent.id}">
+                                      <field name="operation"/>
+                                      <field name="product_code"/>
+                                  </tree>
+                                  <form>
+                                      <header>
+                                        <field name="mixed_bulk_operation" invisible="1"/>
+                                      </header>
+                                      <sheet string="Operação">
+                                        <div class="oe_title" attrs="{'invisible': [('operation_done', '!=', True)]}">
+                                            <h1>
+                                                <field name="name" placeholder="Nome..." readonly="1"/>
+                                            </h1>
+                                            <field name="operation_date" readonly="1"/>
+                                            <field name="operation_done" invisible="1"/>
+                                        </div>
+                                          <group>
+                                            <group>
+                                              <field name="operation" required="1" attrs="{'readonly': [('operation_done', '=', True)]}"/>
+                                              <field name="data_fill" required="1" attrs="{'invisible': [('operation', '=', False)]}"/>
+                                            </group>
+                                            <group>
+                                              <field name="product_id" attrs="{'required':[('data_fill', '=', 'inventory')], 'invisible': ['|',('data_fill', '!=', 'inventory'),('operation', '=', False)]}" options="{'no_create_edit': True, 'no_quick_create': True}"/>
+                                              <field name="product_code" attrs="{'required':[('data_fill', '!=', 'inventory')],'invisible': ['|',('data_fill', '!=', 'manual'),('operation', '=', False)]}" options="{'no_create_edit': True, 'no_quick_create': True}"/>
+                                              <field name="batch_code" attrs="{'required':[('data_fill', '!=', 'inventory')],'invisible': ['|','|',('data_fill', '!=', 'manual'),('operation', '=', False),('product_code','in',[False,'',' '])]}"/>
+                                              <field name="expiration_date" attrs="{'required':[('data_fill', '!=', 'inventory')],'invisible': ['|','|','|',('data_fill', '!=', 'manual'),('operation', '=', False),('product_code','in',[False,'',' ']),('batch_code','in',[False,'',' '])]}"/>
+                                            </group>
+                                          </group>
+
+                                          <notebook attrs="{'invisible': ['|',('product_id', '=', False),('data_fill','not in',['inventory'])]}">
+                                              <page string="Packs">
+                                                <field name="inventory_pack_ids" mode="tree" nolabel="1" required="1" attrs="{'invisible': ['|',('product_id', '=', False),('data_fill','!=','inventory')]}">
+                                                  <tree editable="bottom" >
+                                                      <field name="product_id"/>
+                                                      <field name="pack_id" domain="[('product_id','=',parent.product_id)]" options="{'no_create_edit': True, 'no_quick_create': True}"/>
+                                                      <!-- <field name="product_id"/> -->
+                                                      <field name="return_code"/>
+                                                      <field name="operation_status" widget='badge' decoration-success="operation_status == 'done'" decoration-warning="operation_status == 'waiting'" decoration-danger="operation_status == 'failed'"/>
+                                                  </tree>
+                                              </field>
+                                              </page>
+                                          </notebook>
+
+                                          <notebook attrs="{'invisible': ['|',('product_code', 'in', [False,'',' ']),('data_fill','not in',['manual'])]}">
+                                              <page string="Packs">
+                                                <field name="manual_pack_ids" mode="tree" nolabel="1" required="1"  attrs="{'invisible': ['|',('product_code', 'in', [False,'',' ']),('data_fill','not in',['manual'])],}">
+                                                  <!-- 'readonly': [('operation_done', '=', True)] -->
+                                                  <tree editable="bottom" >
+                                                      <field name="product_code"/>
+                                                      <field name="serial_code"/>
+                                                      <field name="return_code"/>
+                                                      <field name="operation_status" widget='badge' decoration-success="operation_status == 'done'" decoration-warning="operation_status == 'waiting'" decoration-danger="operation_status == 'failed'"/>
+                                                  </tree>
+                                              </field>
+                                              </page>
+                                          </notebook>
+                                      </sheet>
+                                  </form>
+                              </field>
+                              </page>
+                          </notebook>
+                      </sheet>
+                  </form>
+              </field>
+          </record>
+
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="nmvs_mixed_bulk_operation_action_window">
+      <field name="name">Operações Manuais NMVS</field>
+      <field name="res_model">nmvs.mixed.bulk.operation</field>
+      <field name="view_mode">form</field>
+      <field name="target">new</field>
+    </record>
+
+  </data>
+</odoo>

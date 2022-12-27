@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<odoo>
+        <record id="stock_move_line_product_selector_inh" model="ir.ui.view">
+            <field name="name">stock.product.selector.inherit</field>
+            <field name="model">stock.move.line</field>
+            <field name="inherit_id" ref="stock_barcode.stock_move_line_product_selector"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('row-long')]" position="before">
+                    <div class="row row-long">
+                        <div class="col-12 my-2 d-flex">
+                            <i class="fa fa-fw fa-lg fa-cubes mr-3" title="Lot"/>
+                            <field name="batch_code" placeholder="Lote" />  
+                        </div>
+                    </div>
+                    <div class="row row-long">
+                        <div class="col-12 my-2 d-flex">
+                            <i class="fa fa-fw fa-lg fa-cubes mr-3" title="Lot"/>
+                            <field name="exp_date" placeholder="Data de Validade" />  
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+</odoo>

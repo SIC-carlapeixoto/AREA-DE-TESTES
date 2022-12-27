@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- Tax Statement Templates -->
+    <record id="tax_stmt_periodic" model="account.tax.statement">
+        <field name="name">IVA - Decl. Periódica</field>
+        <field name="type">vat.periodic</field>
+        <field name="custom">False</field>
+    </record>
+
+    <record id="tax_stmt_periodic_annex_r" model="account.tax.statement">
+        <field name="name">IVA - Decl. Periódica - Anexo R</field>
+        <field name="type">vat.periodic.annexr</field>
+        <field name="custom">False</field>
+    </record>
+
+    <record id="tax_stmt_periodic_paid_tax_import" model="account.tax.statement">
+        <field
+            name="name"
+        >IVA - Decl. Periódica - Import. de bens c/ liq. imposto</field>
+        <field name="type">any.internal</field>
+        <field name="custom">False</field>
+    </record>
+
+    <record id="tax_stmt_vat_exploded_view_1" model="account.tax.statement">
+        <field name="name">IVA - Objeto e Região</field>
+        <field name="type">any.internal</field>
+        <field name="custom">False</field>
+    </record>
+
+
+
+</odoo>

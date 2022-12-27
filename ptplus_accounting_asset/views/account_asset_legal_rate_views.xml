@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <menuitem
+        id="account_asset_legal_rate_menu"
+        parent="account.account_management_menu"
+        action="ptplus_accounting.account_asset_legal_rate_action_list"
+        groups="account.group_account_user"
+    />
+
+</odoo>

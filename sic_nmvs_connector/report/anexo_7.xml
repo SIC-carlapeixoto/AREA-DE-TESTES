@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+       <template id="report_anexo_7_document">
+        <t t-call="web.internal_layout">
+            <t t-set="o" t-value="o.with_context(lang=o.partner_id.lang)"/>
+            <t t-set="forced_vat" t-value="o.fiscal_position_id.foreign_vat"/> <!-- So that it appears in the footer of the report instead of the company VAT if it's set -->
+            <br/>
+            <br/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div style="text-align: right">
+                            <strong>Anexo VII</strong>
+                            <br/>
+                            ORIGINAL
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div style="text-align: center">
+                            REQUISIÇÃO DE SUBSTÂNCIA E SUAS PREPARAÇÕES COMPREENDIDAS NAS TABELAS I, II, III E IV, COM EXCEÇÃO DA II-A, ANEXAS AO DECRETO-LEI N.º 15/93, DE 22 DE JANEIRO, COM RETIFICAÇÃO DE 20 DE FEVEREIRO
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div style="text-align: right">
+                           Nº <span t-field="o.name"/> / <span t-field="o.date_approve" t-options='{"format": "dd.MM.yyyy"}'/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div style="text-align: left">
+                           (Nos termos do art. 18.º do Decreto regulamentar n.º 61/94, de 12 de outubro).<br/>
+                           Requisita-se a: <span t-field="o.partner_id"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page">
+
+                <h2 class="mt-4" style="color: transparent;"><span t-field="o.name"/></h2>
+                <div class="oe_structure"/>
+                <table class="table table-sm">
+                    <thead style="display: table-row-group">
+                        <tr>
+                            <th name="th_code"><strong>Código</strong></th>
+                            <th name="th_name" class="text-center"><strong>Designação, forma farmacêutica e dosagem</strong></th>
+                            <th name="th_quantity" class="text-end"><strong>Qtd. Pedida</strong></th>
+                            <th name="th_quantity_done" class="text-end"><strong>Qtd. Fornecida</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="o.order_line" t-as="order_line">
+                            <tr t-att-class="'o_line_section'">
+                                <t t-if="not order_line.display_type">
+                                    <td id="product">
+                                        <span t-field="order_line.product_id.default_code"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="order_line.product_id.name"/>
+                                    </td>
+                                    <td class="text-end">
+                                        <span t-field="order_line.product_qty"/>
+                                        <span t-field="order_line.product_uom" groups="uom.group_uom"/>
+                                    </td>
+                                    <td class="text-end"></td>
+                                </t>
+                                <t t-else="">
+                                    <td colspan="99" id="section">
+                                        <span t-field="order_line.name"/>
+                                    </td>
+                                </t>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+
+                <!-- position:absolute;top:850px; page-break-inside: avoid;-->
+
+
+
+
+
+
+
+            </div>
+            <div class="footer">
+                <div style="border: 1px solid black; border-bottom-color: transparent;" class="col-12">
+                    <section class="pb0 pt0">
+                        <div class="container">
+                            <div class="row">
+                                <div class="pt16 pb 16 col-5">
+                                    Carimbo da entidade requisitante
+                                </div>
+                                <div class="pt16 pb 16 col-7">
+                                    Diretor Técnico ou Farmacêutico
+                                    <br/>
+                                    <br/>
+                                    Nº de insc. na O. F. 15634
+                                    <br/>
+                                    Data: <span t-field="o.date_approve" t-options='{"format": "dd.MM.yyyy"}'/>
+                                    <br/>                                    
+                                    <img t-att-src="'data:image/png;base64,%s' % to_text(o.director_signature)" style="max-height: 60px; max-withd: 120px;"/>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div style="border: 1px solid black;" class="col-12">
+                    <section class="pb0 pt0">
+                        <div class="container">
+                            <div class="row">
+                                <div class="pt16 pb 16 col-5">
+                                    Carimbo da entidade fornecedora
+                                </div>
+                                <div class="pt16 pb 16 col-7">
+                                    Diretor Técnico ou Farmacêutico
+                                    <br/>
+                                    <br/>
+                                    Nº de insc. na O. F. ________________
+                                    <br/>
+                                    Data: ___/___/_____
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div style="page-break-before: always;"/>
+
+<!-- SECOND PAGE-->
+<!-- SECOND PAGE-->
+<!-- SECOND PAGE-->
+<!-- SECOND PAGE-->
+
+            <br/>
+            <br/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div style="text-align: right">
+                            <strong>Anexo VII</strong>
+                            <br/>
+                            DUPLICADO
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div style="text-align: center">
+                            REQUISIÇÃO DE SUBSTÂNCIA E SUAS PREPARAÇÕES COMPREENDIDAS NAS TABELAS I, II, III E IV, COM EXCEÇÃO DA II-A, ANEXAS AO DECRETO-LEI N.º 15/93, DE 22 DE JANEIRO, COM RETIFICAÇÃO DE 20 DE FEVEREIRO
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div style="text-align: right">
+                           Nº <span t-field="o.name"/> / <span t-field="o.date_approve" t-options='{"format": "dd.MM.yyyy"}'/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div style="text-align: left">
+                           (Nos termos do art. 18.º do Decreto regulamentar n.º 61/94, de 12 de outubro).<br/>
+                           Requisita-se a: <span t-field="o.partner_id"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page">
+
+                <h2 class="mt-4" style="color: transparent;"><span t-field="o.name"/></h2>
+                <div class="oe_structure"/>
+                <table class="table table-sm">
+                    <thead style="display: table-row-group">
+                        <tr>
+                            <th name="th_code"><strong>Código</strong></th>
+                            <th name="th_name" class="text-center"><strong>Designação, forma farmacêutica e dosagem</strong></th>
+                            <th name="th_quantity" class="text-end"><strong>Qtd. Pedida</strong></th>
+                            <th name="th_quantity_done" class="text-end"><strong>Qtd. Fornecida</strong></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="o.order_line" t-as="order_line">
+                            <tr t-att-class="'o_line_section'">
+                                <t t-if="not order_line.display_type">
+                                    <td id="product">
+                                        <span t-field="order_line.product_id.default_code"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="order_line.product_id.name"/>
+                                    </td>
+                                    <td class="text-end">
+                                        <span t-field="order_line.product_qty"/>
+                                        <span t-field="order_line.product_uom" groups="uom.group_uom"/>
+                                    </td>
+                                    <td class="text-end"></td>
+                                </t>
+                                <t t-else="">
+                                    <td colspan="99" id="section">
+                                        <span t-field="order_line.name"/>
+                                    </td>
+                                </t>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+
+                <!-- position:absolute;top:850px; page-break-inside: avoid;-->
+
+
+
+
+
+
+
+            </div>
+            <div class="footer">
+                <div style="border: 1px solid black; border-bottom-color: transparent;" class="col-12">
+                    <section class="pb0 pt0">
+                        <div class="container">
+                            <div class="row">
+                                <div class="pt16 pb 16 col-5">
+                                    Carimbo da entidade requisitante
+                                </div>
+                                <div class="pt16 pb 16 col-7">
+                                    Diretor Técnico ou Farmacêutico
+                                    <br/>
+                                    <br/>
+                                    Nº de insc. na O. F. 15634
+                                    <br/>
+                                    Data: <span t-field="o.date_approve" t-options='{"format": "dd.MM.yyyy"}'/>
+                                    <br/>                                    
+                                    <img t-att-src="'data:image/png;base64,%s' % to_text(o.director_signature)" style="max-height: 60px; max-withd: 120px;"/>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div style="border: 1px solid black;" class="col-12">
+                    <section class="pb0 pt0">
+                        <div class="container">
+                            <div class="row">
+                                <div class="pt16 pb 16 col-5">
+                                    Carimbo da entidade fornecedora
+                                </div>
+                                <div class="pt16 pb 16 col-7">
+                                    Diretor Técnico ou Farmacêutico
+                                    <br/>
+                                    <br/>
+                                    Nº de insc. na O. F. ________________
+                                    <br/>
+                                    Data: ___/___/_____
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+
+
+
+
+
+            </div>
+        </t>
+    </template>
+
+
+    <template id="report_anexo_7">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="sic_nmvs_connector.report_anexo_7_document" t-lang="o.partner_id.lang"/>
+            </t>
+        </t>
+    </template>
+</odoo>

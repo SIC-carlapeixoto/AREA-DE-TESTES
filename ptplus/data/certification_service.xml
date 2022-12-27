@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="csb_default" model="certification.service.backend">
+        <field name="name">none</field>
+        <field name="description">None</field>
+        <field name="module">ptplus</field>
+        <field name="submodule">models.certification_service</field>
+        <field name="class_name">CertificationBackend</field>
+    </record>
+
+</odoo>

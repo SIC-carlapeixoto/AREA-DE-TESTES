@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+
+    <!-- Sequences for fiscal documents -->
+    <record id="sequence_sale_quotation_pt" model="ir.sequence">
+        <field name="name">Orçamentos a Clientes</field>
+        <field name="code">pt.sale.quotation</field>
+        <field name="implementation">no_gap</field>
+        <field name="prefix">A/</field>
+        <field name="padding">5</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+
+    <record id="sequence_sale_order_pt" model="ir.sequence">
+        <field name="name">Encomendas de Clientes</field>
+        <field name="code">pt.sale.order</field>
+        <field name="implementation">no_gap</field>
+        <field name="prefix">A/</field>
+        <field name="padding">5</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+
+    <!-- FISCAL DOCUMENT TYPES -->
+
+    <!-- Section 4.3 - Working Documents -->
+    <record id="fiscal_document_type_or" model="fiscal.document.type">
+        <field name="type">OR</field>
+        <field name="name">Quote</field>
+        <field name="source_billing">P</field>
+        <field name="sequence" eval="110" />
+        <field name="sequence_id" eval="ref('sequence_sale_quotation_pt')" />
+    </record>
+    <record id="fiscal_document_type_pf" model="fiscal.document.type">
+        <field name="type">PF</field>
+        <field name="name">Proforma Invoice</field>
+        <field name="source_billing">P</field>
+        <field name="sequence" eval="120" />
+        <field name="active">False</field>
+    </record>
+    <record id="fiscal_document_type_fo" model="fiscal.document.type">
+        <field name="type">FO</field>
+        <field name="name">Worksheet</field>
+        <field name="source_billing">P</field>
+        <field name="sequence" eval="130" />
+        <field name="active">False</field>
+    </record>
+    <record id="fiscal_document_type_fc" model="fiscal.document.type">
+        <field name="type">FC</field>
+        <field name="name">Consignment Invoice</field>
+        <field name="source_billing">P</field>
+        <field name="sequence" eval="140" />
+        <field name="active">False</field>
+    </record>
+    <record id="fiscal_document_type_cc" model="fiscal.document.type">
+        <field name="type">CC</field>
+        <field name="name">Consignment Credit</field>
+        <field name="source_billing">P</field>
+        <field name="sequence" eval="150" />
+        <field name="active">False</field>
+    </record>
+    <record id="fiscal_document_type_ne" model="fiscal.document.type">
+        <field name="type">NE</field>
+        <field name="name">Order</field>
+        <field name="source_billing">P</field>
+        <field name="sequence" eval="160" />
+        <field name="sequence_id" eval="ref('sequence_sale_order_pt')" />
+    </record>
+    <record id="fiscal_document_type_cm" model="fiscal.document.type">
+        <field name="type">CM</field>
+        <field name="name">Table Info</field>
+        <field name="source_billing">P</field>
+        <field name="sequence" eval="170" />
+        <field name="active">False</field>
+    </record>
+
+</odoo>

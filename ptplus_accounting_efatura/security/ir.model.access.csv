@@ -1,0 +1,7 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_account_efatura_user","access.account.efatura","model_account_efatura","account.group_account_invoice",1,0,0,0
+"access_account_efatura_manager","access.account.efatura","model_account_efatura","account.group_account_user",1,1,1,1
+access_account_efatura_line_user,access.account.efatura.line,model_account_efatura_line,account.group_account_invoice,1,0,0,0
+access_account_efatura_line_manager,access.account.efatura.line,model_account_efatura_line,account.group_account_user,1,1,1,1
+access_dataport_import_efatura,access_dataport_import_efatura,model_dataport_import_efatura,account.group_account_user,1,1,1,1
+access_account_move_efatura,access_account_move_efatura,model_account_move_efatura,account.group_account_user,1,1,1,1

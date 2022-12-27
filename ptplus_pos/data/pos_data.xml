@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+
+    <!-- Sequences for POS fiscal documents -->
+    <record id="pt_pos_sequence_invoice" model="ir.sequence">
+        <field name="name">Fatura-recibo POS</field>
+        <field name="code">	pt.account.invoice_receipt</field>
+        <field name="implementation">no_gap</field>
+        <field name="prefix">P1/</field>
+        <field name="padding">6</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+    <record id="pt_pos_sequence_credit_note" model="ir.sequence">
+        <field name="name">Nota de Crédito POS</field>
+        <field name="code">	pt.account.credit_note</field>
+        <field name="implementation">no_gap</field>
+        <field name="prefix">P1/</field>
+        <field name="padding">4</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+
+    <!-- POS document types -->
+    <record id="pt_pos_fiscal_document_type_fr" model="fiscal.document.type">
+        <field name="type">FR</field>
+        <field name="name">POS Invoice-receipt</field>
+        <field name="point_of_sale">True</field>
+        <field name="active">True</field>
+        <field name="source_billing">P</field>
+        <field name="sequence" eval="200" />
+        <field name="sequence_id" eval="ref('pt_pos_sequence_invoice')" />
+    </record>
+    <record id="pt_pos_fiscal_document_type_nc" model="fiscal.document.type">
+        <field name="type">NC</field>
+        <field name="name">POS Credit Note</field>
+        <field name="point_of_sale">True</field>
+        <field name="active">True</field>
+        <field name="source_billing">P</field>
+        <field name="sequence" eval="201" />
+        <field name="sequence_id" eval="ref('pt_pos_sequence_credit_note')" />
+    </record>
+
+</odoo>

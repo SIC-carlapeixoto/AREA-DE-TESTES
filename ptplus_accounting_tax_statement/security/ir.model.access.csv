@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_account_tax_statement,account.tax.statement,model_account_tax_statement,account.group_account_user,1,1,1,1
+access_account_tax_statement_line,account.tax.statement.line,model_account_tax_statement_line,account.group_account_user,1,1,1,1
+access_wizard_tax_statement,access_wizard_tax_statement,model_wizard_tax_statement,account.group_account_user,1,1,1,1
+access_wizard_recap_statement,access_wizard_recap_statement,model_wizard_recap_statement,account.group_account_user,1,1,1,1

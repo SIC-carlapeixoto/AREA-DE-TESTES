@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+
+        <record id="import_product_notification_list_form" model="ir.ui.view">
+              <field name="name">Importar Listagem Infarmed</field>
+              <field name="model">import.product.notification.list</field>
+              <field name="arch" type="xml">
+                  <form>
+                      <header>
+
+                          <button
+                              string="Ler Ficheiro e Importar Dados"
+                              name="read_file"
+                              type="object"
+                              class="oe_highlight"
+                               attrs="{'invisible': [('file_content', '=', False)]}"
+                          />
+                      </header>
+                      <sheet string="Operação">
+                          <group>
+                            <group>
+                                <field name="file_name" invisible="1"/>
+                                <field name="file_content" filename="file_name"/>
+                            </group>
+                            <group>
+                            </group>
+                          </group>
+                      </sheet>
+                      <footer>
+                      </footer>
+                  </form>
+              </field>
+          </record>
+
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="import_product_notification_list_form_action_window">
+      <field name="name">Importar Listagem Infarmed</field>
+      <field name="res_model">import.product.notification.list</field>
+      <field name="view_mode">form</field>
+      <field name="target">new</field>
+    </record>
+
+  </data>
+</odoo>

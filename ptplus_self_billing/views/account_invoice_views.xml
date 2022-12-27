@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- headed for purchase invoices -->
+    <record id="invoice_supplier_form_self_billing" model="ir.ui.view">
+        <field name="name">account.invoice.supplier.form.pt_self_billing</field>
+        <field name="model">account.invoice</field>
+        <field name="inherit_id" ref="account.invoice_supplier_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                 <button
+                    type="action"
+                    name="%(ptplus_self_billing.action_report_self_billing_invoice)d"
+                    string="Print Self-bill"
+                    attrs="{'invisible':[('self_billing','=',False)]}"
+                />
+
+            </xpath>
+            <field name="date_invoice" position="after">
+                <field name="self_billing_partner" invisible="1" />
+                <field
+                    name="self_billing"
+                    attrs="{'invisible':[('self_billing_partner','=',False)]}"
+                />
+                <field
+                    name="source_billing"
+                    invisible="1"
+                /> <!--attrs="{'invisible':[('type','not in',('out_invoice', 'out_refund'))]}"-->
+                <field
+                    name="fiscal_document_type_id"
+                    string="Document Type"
+                    options="{'no_create_edit': True}"
+                    attrs="{'invisible':[('self_billing','=', False)]}"
+                    domain="[('source_billing', '=', source_billing), ('section', '=', 'invoice'),
+                                ('correction', '=', (type == 'in_refund')),
+                                ('reversion', '=', (type == 'in_refund')),
+                                ('self_billing', '=', True), ('self_billing_partner_id', '=', partner_id)]"
+                />
+                <field name="correction" invisible="1" />
+            </field>
+        </field>
+    </record>
+
+</odoo>

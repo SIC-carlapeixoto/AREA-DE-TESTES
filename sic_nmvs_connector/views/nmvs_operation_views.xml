@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="nmvs_operation_list">
+      <field name="name">Comunicações NMVS</field>
+      <field name="model">nmvs.operation</field>
+      <field name="arch" type="xml">
+        <tree default_order="name desc" sample="1" decoration-info="operation_status == 'none'" create="false" edit="false">
+          <field name="name"/>
+          <field name="operation"/>
+          <field name="type"/>
+          <field name="operation_status" optional="show" widget='badge' decoration-success="operation_status == 'done'" decoration-warning="operation_status == 'waiting'" decoration-danger="operation_status == 'failed'"/>
+          <field name="parent_id"/>
+          <field name="operation_date"/>
+        </tree>
+      </field>
+    </record>
+
+
+        <record id="nmvs_operation_form" model="ir.ui.view">
+              <field name="name">Comunicação NMVS</field>
+              <field name="model">nmvs.operation</field>
+              <field name="arch" type="xml">
+                  <form create="false" edit="false">
+                      <header>
+                          <button
+                              string="Executar"
+                              name="execute_operation"
+                              type="object"
+                              class="oe_highlight"
+                              attrs="{'invisible': ['|',('operation','not in',['G188RequestBulkPackResult','G196RequestBulkTransactionResult']),('operation_status','not in',['waiting'])]}"
+                          />
+                          <button
+                              string="Undo"
+                              name="undo_operation"
+                              type="object"
+                              class="oe_highlight"
+                              attrs="{'invisible': [('can_be_undone','!=',True)]}"
+                              confirm="Deseja reverter a comunicação?"
+                          />
+                          <!-- <field name="state" widget="statusbar" /> -->
+                      </header>
+                      <field name="operation_status" invisible="1"/>
+                      <field name="can_be_undone" invisible="1"/>
+                      <sheet string="Teste">
+                          <div class="oe_button_box" name="button_box">
+                              <!--   <button
+                                  class="oe_stat_button"
+                                  icon="fa-book"
+                                  name="execute_test"
+                                  type="object"
+                              >
+                                   <field
+                                      name="invoice_count"
+                                      widget="statinfo"
+                                      string="Invoices"
+                                  />
+                              </button> -->
+                          </div>
+                          <div class="oe_title">
+                              <h1>
+                                  <field name="name" placeholder="Nome..."/>
+                              </h1>
+                          </div>
+                          <group>
+                            <group>
+                              <field name="operation"/>
+                              <field name="product_code" attrs="{'invisible': [('product_code', '=', False)]}"/>
+                              <field name="product_id" attrs="{'invisible': [('product_id', '=', False)]}"/>
+                              <field name="batch_code"/>
+                              <field name="expiration_date"/>
+                            </group>
+                            <group>
+                              <field name="type"/>
+                              <field name="transaction_id"/>
+                              <field name="parent_id" attrs="{'invisible': [('parent_id', '=', False)]}"/>
+                              <field name="operation_date"/>
+                              <field name="result_code"/>
+                              <field name="result_code_desc"/>
+                            </group>
+                          </group>
+                          <field name="data_fill" invisible="1"/>
+                          <notebook attrs="{'invisible': ['|',('data_fill','not in',['inventory']),('inventory_pack_ids','=',[])]}">
+                              <page string="Serial Nº">
+                                <field name="inventory_pack_ids" mode="tree" nolabel="1" readonly="1">
+                                  <tree editable="bottom" >
+                                      <field name="product_id"/>
+                                      <field name="pack_id"/>
+                                      <field name="pack_state"/>
+                                      <field name="pack_state_reason"/>
+                                      <field name="return_code"/>
+                                      <field name="operation_status" widget='badge' decoration-success="operation_status == 'done'" decoration-warning="operation_status == 'waiting'" decoration-danger="operation_status == 'failed'"/>
+                                  </tree>
+                              </field>
+                              </page>
+                          </notebook>
+
+                          <notebook attrs="{'invisible': ['|',('data_fill','not in',['manual']),('manual_pack_ids','=',[])]}">
+                              <page string="Serial Nº">
+                                <field name="manual_pack_ids" mode="tree" nolabel="1" readonly="1">
+                                  <tree editable="bottom" >
+                                      <field name="product_code"/>
+                                      <field name="serial_code"/>
+                                      <field name="pack_state"/>
+                                      <field name="pack_state_reason"/>
+                                      <field name="return_code"/>
+                                      <field name="operation_status" widget='badge' decoration-success="operation_status == 'done'" decoration-warning="operation_status == 'waiting'" decoration-danger="operation_status == 'failed'"/>
+                                  </tree>
+                              </field>
+                              </page>
+                          </notebook>
+                          <notebook attrs="{'invisible': [('operation','!=','G195SubmitBulkTransaction')]}">
+                              <page string="Operações">
+                                <field name="mixed_bulk_lines" mode="tree" nolabel="1" readonly="1">
+                                  <tree editable="bottom" >
+                                      <field name="name"/>
+                                      <field name="operation"/>
+                                      <field name="operation_date"/>
+                                      <field name="product_code"/>
+                                      <field name="batch_code"/>
+                                      <field name="expiration_date"/>
+                                      <field name="serial_code"/>
+                                      <field name="pack_state"/>
+                                      <field name="pack_state_reason"/>
+                                      <field name="return_code"/>
+                                      <field name="operation_status" widget='badge' decoration-success="operation_status == 'done'" decoration-warning="operation_status == 'waiting'" decoration-danger="operation_status == 'failed'"/>
+                                  </tree>
+                              </field>
+                              </page>
+                          </notebook>
+                      </sheet>
+                  </form>
+              </field>
+          </record>
+
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="nmvs_operation_action_window">
+      <field name="name">Comunicações NMVS</field>
+      <field name="res_model">nmvs.operation</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+  </data>
+</odoo>

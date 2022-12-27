@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <record id="csb_exo" model="certification.service.backend">
+        <field name="name">exo</field>
+        <field name="description">Exo Software</field>
+        <!--<field name="production">True</field>-->
+        <field name="module">ptplus_backend_exo</field>
+        <field name="submodule">backends</field>
+        <field name="class_name">BackendExo</field>
+    </record>
+
+</odoo>

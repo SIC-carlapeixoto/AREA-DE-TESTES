@@ -1,0 +1,2829 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ptplus
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-05 13:41+0000\n"
+"PO-Revision-Date: 2022-09-05 13:41+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid "%s (copy)"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_log_view_form
+msgid "&amp;nbsp;"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid "'Original', 'Copy'"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid "'Original', 'Duplicate'"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid "'Original', 'Duplicate', 'Triplicate'"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_special_regime__15reti
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_special_regime__15reti
+msgid "15reti"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_special_regime__22reti
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_special_regime__22reti
+msgid "22reti"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.res_config_settings_view_form_pt
+msgid ""
+"<span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-"
+"specific.\" aria-label=\"Values set here are company-specific.\" "
+"groups=\"base.group_multi_company\" role=\"img\"/>"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.res_config_settings_view_form_pt
+msgid ""
+"<span class=\"o_form_label\">Multi-way Reports</span>\n"
+"                            <span class=\"fa fa-lg fa-building-o\" title=\"Values set here are company-specific.\" aria-label=\"Values set here are company-specific.\" groups=\"base.group_multi_company\" role=\"img\"/>"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.fiscal_document_type_view_form
+msgid "<span class=\"o_stat_text\">Documents</span>"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.report_invoice_document
+msgid "<span>Total in EUR: </span>"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.report_invoice_document
+msgid "<strong>Date:</strong>"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.report_payment_receipt_document
+msgid "<strong>TIN:</strong>"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.report_payment_receipt_document
+msgid "<strong>Write-off: </strong>"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/account_tax.py:0
+#, python-format
+msgid "A VAT Exemption Reason is required for tax %s"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid "A document type is required"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid "A sequence for document type '%s' is required"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_ta
+msgid "AT"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_account_chart_template
+msgid "Account Chart Template"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_res_company__account_officer_vat
+msgid "Accountant TIN"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document_type__active
+#: model_terms:ir.ui.view,arch_db:ptplus.fiscal_document_type_view_search
+msgid "Active"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_move__source_billing__p
+#: model:ir.model.fields.selection,name:ptplus.selection__account_payment__source_billing__p
+#: model:ir.model.fields.selection,name:ptplus.selection__account_payment_register__source_billing__p
+#: model:ir.model.fields.selection,name:ptplus.selection__fiscal_document__source_billing__p
+#: model:ir.model.fields.selection,name:ptplus.selection__fiscal_document_type__source_billing__p
+msgid "Application"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.fiscal_document_type_view_form
+msgid "Archived"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_move_form_pt
+msgid "Are you sure you want to cancel the document?"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_subject__asset
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_subject__asset
+msgid "Asset"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_ir_attachment
+#: model:ir.model.fields,field_description:ptplus.field_dataport_log__attachment_id
+msgid "Attachment"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_country_region__pt-ac
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_country_region__pt-ac
+msgid "Azores"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_special_regime__bssdrsr
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_special_regime__bssdrsr
+msgid "BSSDRSR"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.res_config_settings_view_form_pt
+msgid "Backend plug-in needed for fiscal document validation"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_log__method__csv
+msgid "CSV"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_export__format__csv
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_import__format__csv
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_mixin__format__csv
+msgid "CSV File"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_export_form
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_import_form
+#: model_terms:ir.ui.view,arch_db:ptplus.view_account_payment_form_pt
+#: model_terms:ir.ui.view,arch_db:ptplus.view_move_form_pt
+msgid "Cancel"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_move__fiscal_document_status__a
+#: model:ir.model.fields.selection,name:ptplus.selection__account_payment__fiscal_document_status__a
+#: model:ir.model.fields.selection,name:ptplus.selection__fiscal_document__fiscal_document_status__a
+msgid "Cancelled"
+msgstr ""
+
+#. module: ptplus
+#: model:fiscal.document.type,name:ptplus.fiscal_document_type_rc
+#: model:ir.model.fields.selection,name:ptplus.selection__fiscal_document_type__type__rc
+msgid "Cash Basis Receipt"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_certification_service_backend
+#: model:ir.model.fields,field_description:ptplus.field_res_config_settings__cert_service_backend
+msgid "Certification Service Backend"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.constraint,message:ptplus.constraint_certification_service_backend_unique_name
+msgid "Certification Service Backend name must be unique"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.res_config_settings_view_form_pt
+msgid ""
+"Choose where do you want the QR code to be printed on fiscal document "
+"reports."
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_certification_service_backend__class_name
+msgid "Class Name"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_export_form
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_import_form
+msgid "Close"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_wizard_webservice_failure__error_code
+msgid "Code"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_special_regime__cdd
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_special_regime__cdd
+msgid "Com direito a dedução"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__company_id
+#: model:ir.model.fields,field_description:ptplus.field_dataport_import__company_id
+#: model:ir.model.fields,field_description:ptplus.field_dataport_log__company_id
+#: model:ir.model.fields,field_description:ptplus.field_dataport_mixin__company_id
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document_type__company_id
+#: model_terms:ir.ui.view,arch_db:ptplus.fiscal_document_type_view_search
+msgid "Company"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/webservice.py:0
+#, python-format
+msgid "Connection Error"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/webservice.py:0
+#, python-format
+msgid "Connection Timeout"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_country_region__pt
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_country_region__pt
+msgid "Continent"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_bank_statement_line__correction
+#: model:ir.model.fields,field_description:ptplus.field_account_move__correction
+#: model:ir.model.fields,field_description:ptplus.field_account_payment__correction
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document_type__correction
+msgid "Correction"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_wizard_webservice_failure
+msgid "Couldn't communicate fiscal document to tax authorities."
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid "Couldn't get document type name"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/backends.py:0
+#, python-format
+msgid ""
+"Couldn't obtain a backend for the certifications services. Please contact "
+"your support team. Error: %s"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_certification_service_backend__create_uid
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__create_uid
+#: model:ir.model.fields,field_description:ptplus.field_dataport_import__create_uid
+#: model:ir.model.fields,field_description:ptplus.field_dataport_log__create_uid
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document_type__create_uid
+#: model:ir.model.fields,field_description:ptplus.field_wizard_webservice_failure__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_certification_service_backend__create_date
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__create_date
+#: model:ir.model.fields,field_description:ptplus.field_dataport_import__create_date
+#: model:ir.model.fields,field_description:ptplus.field_dataport_log__create_date
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document_type__create_date
+#: model:ir.model.fields,field_description:ptplus.field_wizard_webservice_failure__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: ptplus
+#: model:fiscal.document.type,name:ptplus.fiscal_document_type_nc
+#: model:ir.model.fields.selection,name:ptplus.selection__fiscal_document_type__type__nc
+msgid "Credit Note"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_dataport_export
+msgid "Data Export"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_dataport_import
+msgid "Data Import"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_dataport_log_filter
+msgid "Dataport Date"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.actions.act_window,name:ptplus.action_dataport_log_tree
+#: model:ir.model,name:ptplus.model_dataport_log
+#: model:ir.ui.menu,name:ptplus.menu_pt_dataport_log
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_log_view_form
+msgid "Dataport Log"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_dataport_log_filter
+msgid "Dataport Logs"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_dataport_mixin
+msgid "Dataport Mixin"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_log_view_tree
+msgid "Date"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__date_from
+#: model:ir.model.fields,field_description:ptplus.field_dataport_import__date_from
+#: model:ir.model.fields,field_description:ptplus.field_dataport_mixin__date_from
+msgid "Date From"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__date_to
+#: model:ir.model.fields,field_description:ptplus.field_dataport_import__date_to
+#: model:ir.model.fields,field_description:ptplus.field_dataport_mixin__date_to
+msgid "Date To"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_bank_statement_line__system_entry_date
+#: model:ir.model.fields,field_description:ptplus.field_account_move__system_entry_date
+#: model:ir.model.fields,field_description:ptplus.field_account_payment__system_entry_date
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document__system_entry_date
+msgid "Date/Time of document validation"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_bank_statement_line__last_state_update
+#: model:ir.model.fields,field_description:ptplus.field_account_move__last_state_update
+#: model:ir.model.fields,field_description:ptplus.field_account_payment__last_state_update
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document__last_state_update
+msgid "Date/Time of last state change"
+msgstr ""
+
+#. module: ptplus
+#: model:fiscal.document.type,name:ptplus.fiscal_document_type_nd
+#: model:ir.model.fields.selection,name:ptplus.selection__fiscal_document_type__type__nd
+msgid "Debit Note"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_certification_service_backend__description
+msgid "Description"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_wizard_webservice_failure__error_detail
+msgid "Detail"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_bank_statement_line__hash
+#: model:ir.model.fields,field_description:ptplus.field_account_move__hash
+#: model:ir.model.fields,field_description:ptplus.field_account_payment__hash
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document__hash
+msgid "Digital signature"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_log__direction
+msgid "Direction"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_chart_template__display_name
+#: model:ir.model.fields,field_description:ptplus.field_account_move__display_name
+#: model:ir.model.fields,field_description:ptplus.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:ptplus.field_account_payment__display_name
+#: model:ir.model.fields,field_description:ptplus.field_account_payment_register__display_name
+#: model:ir.model.fields,field_description:ptplus.field_account_tax__display_name
+#: model:ir.model.fields,field_description:ptplus.field_account_tax_template__display_name
+#: model:ir.model.fields,field_description:ptplus.field_base_language_install__display_name
+#: model:ir.model.fields,field_description:ptplus.field_certification_service_backend__display_name
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__display_name
+#: model:ir.model.fields,field_description:ptplus.field_dataport_import__display_name
+#: model:ir.model.fields,field_description:ptplus.field_dataport_log__display_name
+#: model:ir.model.fields,field_description:ptplus.field_dataport_mixin__display_name
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document__display_name
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document_type__display_name
+#: model:ir.model.fields,field_description:ptplus.field_ir_actions_report__display_name
+#: model:ir.model.fields,field_description:ptplus.field_ir_attachment__display_name
+#: model:ir.model.fields,field_description:ptplus.field_ir_sequence__display_name
+#: model:ir.model.fields,field_description:ptplus.field_product_category__display_name
+#: model:ir.model.fields,field_description:ptplus.field_product_template__display_name
+#: model:ir.model.fields,field_description:ptplus.field_res_company__display_name
+#: model:ir.model.fields,field_description:ptplus.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:ptplus.field_res_users__display_name
+#: model:ir.model.fields,field_description:ptplus.field_wizard_webservice_failure__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_tax_template__description
+msgid "Display on Invoices"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid "Document %s cannot be set back to draft"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid ""
+"Document %s contains an inactive tax %s.Please choose another and try again."
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid ""
+"Document %s has a line '%s' that contains an invalid discount percentage. "
+"Please use a number between 0 and 100."
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid ""
+"Document %s has a line '%s' that contains an invalid line total. It must be "
+"either positive or 0."
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid ""
+"Document %s has a line of product %s that contains more than one VAT entry "
+"defined"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid ""
+"Document %s has a line of product %s that contains no VAT information. "
+"Please note that even when the VAT rate is zero, you're still obliged to "
+"define a VAT tax in the document line."
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid "Document %s is a fiscal document. Field Fiscal Doc. Type is required"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid "Document %s is a fiscal document. Field Source Method is required"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid ""
+"Document %s is not a fiscal document. Field Fiscal Doc. Type must be empty"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid ""
+"Document %s is not a fiscal document. Field Source Method must be empty"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid "Document Communication Failure"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document_type__document_count
+msgid "Document Count"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_account_payment_form_pt
+#: model_terms:ir.ui.view,arch_db:ptplus.view_account_payment_register_form_pt
+#: model_terms:ir.ui.view,arch_db:ptplus.view_move_form_pt
+msgid "Document Type"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_log_view_form
+msgid "Download imported/exported file"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_special_regime__egee
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_special_regime__egee
+msgid "EGEE"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_genre__eco
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_genre__eco
+msgid "Ecovalue"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid "Empty fiscal document type on document %s"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/wizards/dataport_export.py:0
+#, python-format
+msgid "Encoding error: %s\n"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__res_company__pt_qrcode_pos__bottom
+msgid "End of last page"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__error
+#: model:ir.model.fields,field_description:ptplus.field_dataport_import__error
+#: model:ir.model.fields,field_description:ptplus.field_dataport_log__error
+#: model:ir.model.fields,field_description:ptplus.field_dataport_mixin__error
+#: model_terms:ir.ui.view,arch_db:ptplus.view_dataport_log_filter
+#: model_terms:ir.ui.view,arch_db:ptplus.view_wizard_webservice_failure
+msgid "Error"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_export_form
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_import_form
+msgid "Errors"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_log_view_form
+msgid "Errors/Warnings"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_log__method__xls
+msgid "Excel"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_export__format__xls
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_import__format__xls
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_mixin__format__xls
+msgid "Excel File"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_genre__iec
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_genre__iec
+msgid "Excise Duty"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_tax_type__ise
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_tax_type__ise
+msgid "Exempt"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_product_category__property_account_expense_refund_categ_id
+#: model:ir.model.fields,field_description:ptplus.field_product_product__property_account_expense_refund_id
+#: model:ir.model.fields,field_description:ptplus.field_product_template__property_account_expense_refund_id
+msgid "Expense Refund Account"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_export_form
+msgid "Export"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_export_form
+msgid "Export Complete"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_bank_statement_line__export_number
+#: model:ir.model.fields,field_description:ptplus.field_account_move__export_number
+#: model:ir.model.fields,field_description:ptplus.field_account_payment__export_number
+msgid "Export Number"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_export_form
+msgid "Export PDF"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__export_pdf_button
+msgid "Export Pdf Button"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_move_form_pt
+msgid "Export Statement Number"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_export_form
+msgid "Export XML"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__export_xml_button
+msgid "Export Xml Button"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_country_region__extra
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_country_region__extra
+msgid "Extra-community"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__data
+#: model:ir.model.fields,field_description:ptplus.field_dataport_import__data
+#: model:ir.model.fields,field_description:ptplus.field_dataport_mixin__data
+msgid "File"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__filename
+#: model:ir.model.fields,field_description:ptplus.field_dataport_import__filename
+#: model:ir.model.fields,field_description:ptplus.field_dataport_mixin__filename
+msgid "Filename"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_bank_statement_line__fiscal_document_status
+#: model:ir.model.fields,field_description:ptplus.field_account_move__fiscal_document_status
+#: model:ir.model.fields,field_description:ptplus.field_account_payment__fiscal_document_status
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document__fiscal_document_status
+msgid "Fiscal Doc. Status"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_bank_statement_line__fiscal_document_type_id
+#: model:ir.model.fields,field_description:ptplus.field_account_move__fiscal_document_type_id
+#: model:ir.model.fields,field_description:ptplus.field_account_payment__fiscal_document_type_id
+#: model:ir.model.fields,field_description:ptplus.field_account_payment_register__fiscal_document_type_id
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document__fiscal_document_type_id
+msgid "Fiscal Doc. Type"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.actions.act_window,name:ptplus.fiscal_document_type_action_list
+#: model:ir.ui.menu,name:ptplus.menu_action_fiscal_document_type_list
+#: model_terms:ir.ui.view,arch_db:ptplus.fiscal_document_type_view_form
+#: model_terms:ir.ui.view,arch_db:ptplus.fiscal_document_type_view_search
+msgid "Fiscal Doc. Types"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_fiscal_document
+msgid "Fiscal Document"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_fiscal_document_type
+msgid "Fiscal Document Type"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__format
+#: model:ir.model.fields,field_description:ptplus.field_dataport_import__format
+#: model:ir.model.fields,field_description:ptplus.field_dataport_mixin__format
+msgid "Format"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_log__date_from
+msgid "From"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_dataport_log_filter
+msgid "From Date"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_special_regime__gslina
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_special_regime__gslina
+msgid "Gasolina"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_special_regime__gasol
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_special_regime__gasol
+msgid "Gasóleo"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_tax_type__nor
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_tax_type__nor
+msgid "General"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_export_form
+msgid "Generated file:"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_tax__pt_genre
+#: model:ir.model.fields,field_description:ptplus.field_account_tax_template__pt_genre
+msgid "Genre"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.fiscal_document_type_view_search
+#: model_terms:ir.ui.view,arch_db:ptplus.view_dataport_log_filter
+msgid "Group By"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/webservice.py:0
+#, python-format
+msgid "HTTP Error"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_chart_template__id
+#: model:ir.model.fields,field_description:ptplus.field_account_move__id
+#: model:ir.model.fields,field_description:ptplus.field_account_move_line__id
+#: model:ir.model.fields,field_description:ptplus.field_account_payment__id
+#: model:ir.model.fields,field_description:ptplus.field_account_payment_register__id
+#: model:ir.model.fields,field_description:ptplus.field_account_tax__id
+#: model:ir.model.fields,field_description:ptplus.field_account_tax_template__id
+#: model:ir.model.fields,field_description:ptplus.field_base_language_install__id
+#: model:ir.model.fields,field_description:ptplus.field_certification_service_backend__id
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__id
+#: model:ir.model.fields,field_description:ptplus.field_dataport_import__id
+#: model:ir.model.fields,field_description:ptplus.field_dataport_log__id
+#: model:ir.model.fields,field_description:ptplus.field_dataport_mixin__id
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document__id
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document_type__id
+#: model:ir.model.fields,field_description:ptplus.field_ir_actions_report__id
+#: model:ir.model.fields,field_description:ptplus.field_ir_attachment__id
+#: model:ir.model.fields,field_description:ptplus.field_ir_sequence__id
+#: model:ir.model.fields,field_description:ptplus.field_product_category__id
+#: model:ir.model.fields,field_description:ptplus.field_product_template__id
+#: model:ir.model.fields,field_description:ptplus.field_res_company__id
+#: model:ir.model.fields,field_description:ptplus.field_res_config_settings__id
+#: model:ir.model.fields,field_description:ptplus.field_res_users__id
+#: model:ir.model.fields,field_description:ptplus.field_wizard_webservice_failure__id
+msgid "ID"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_aq_exist
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_aq_exist_aaa
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_aq_exist_art_15
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_aq_exist_art_22
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_aq_exist_prt
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_aq_extrac_exist
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_aq_extrac_imob
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_aq_extrac_obs
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_aq_imob_aaa
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_aq_imob_art_15
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_aq_imob_art_22
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_aq_obs
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_aq_obs_prt
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_exist_aaa
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_exist_cdd
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_exist_drs
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_exist_sdd
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_extrac_exist
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_extrac_imob
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_extrac_obs
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_imob_aaa
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_imob_drs
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_imob_vtt
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_intrac_exist
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_intrac_imob
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_intrac_obs
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_obs_ccv
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_obs_cdd
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_obs_drs
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_obs_ege
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_0_obs_sdd
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_nd_aq_exist_vtl
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_nd_aq_gasolina
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_nd_aq_imob
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_nd_aq_imob_vta
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_nd_aq_obs
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_nd_aq_obs_vta
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_nd_aq_obs_vtl
+#: model:account.tax.group,name:ptplus.tax_group_iva_0
+msgid "IVA 0%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_12_aq_exist
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_12_aq_imob
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_12_aq_obs
+msgid "IVA 12%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_13_aq_exist
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_13_aq_imob
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_13_aq_obs
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_13_exist
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_13_imob
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_13_obs
+#: model:account.tax.group,name:ptplus.tax_group_iva_13
+msgid "IVA 13%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_16_aq_exist
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_16_aq_exist_vta
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_16_aq_imob
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_16_aq_imob_vta
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_16_aq_intrac_exist
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_16_aq_intrac_imob
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_16_aq_intrac_obs
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_16_aq_obs
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_16_aq_obs_vta
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_16_pd50_aq_gasoleo_incl
+msgid "IVA 16%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_22_aq_exist
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_22_aq_exist_vta
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_22_aq_imob
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_22_aq_imob_vta
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_22_aq_intrac_exist
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_22_aq_intrac_imob
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_22_aq_intrac_obs
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_22_aq_obs
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_22_aq_obs_vta
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_22_pd50_aq_gasoleo_incl
+msgid "IVA 22%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_aq_exist
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_aq_exist_drs
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_aq_exist_vta
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_aq_extrac_exist
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_aq_extrac_imob
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_aq_imob
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_aq_imob_ccv
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_aq_imob_drs
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_aq_imob_ege
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_aq_imob_vta
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_aq_intrac_exist
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_aq_intrac_imob
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_aq_intrac_obs
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_aq_obs
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_aq_obs_ccv
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_aq_obs_drs
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_aq_obs_ege
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_aq_obs_vta
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_exist
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_imob
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_obs
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_23_pd50_aq_gasoleo_incl
+#: model:account.tax.group,name:ptplus.tax_group_iva_23
+msgid "IVA 23%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_4_aq_exist
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_4_aq_imob
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_4_aq_obs
+msgid "IVA 4%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_5_aq_exist
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_5_aq_imob
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_5_aq_obs
+msgid "IVA 5%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_6_aq_exist
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_6_aq_imob
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_6_aq_obs
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_6_exist
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_6_imob
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_6_obs
+#: model:account.tax.group,name:ptplus.tax_group_iva_6
+msgid "IVA 6%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_9_aq_exist
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_9_aq_imob
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_9_aq_obs
+msgid "IVA 9%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_ns
+#: model:account.tax,description:ptplus.1_account_tax_template_iva_ns_aq
+msgid "IVA N/A"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,help:ptplus.field_fiscal_document_type__used
+msgid ""
+"If True the document type has been used to issue at least one fiscal "
+"document so changing its parameters is heavily restricted"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,help:ptplus.field_fiscal_document_type__active
+msgid ""
+"If the active field is set to False, it will allow you to hide the fiscal "
+"document type without removing it."
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.res_config_settings_view_form_pt
+msgid ""
+"If this checkbox is ticked, all the features and rules associated with "
+"Portuguese Invoicing will be active. You won't be able to revert to False "
+"once a fiscal document is validated."
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_import_form
+msgid "Import"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_import_form
+msgid "Import Complete"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_log__direction__in
+msgid "In"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.fiscal_document_type_view_search
+msgid "Inactive"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_product_category__property_account_income_refund_categ_id
+#: model:ir.model.fields,field_description:ptplus.field_product_product__property_account_income_refund_id
+#: model:ir.model.fields,field_description:ptplus.field_product_template__property_account_income_refund_id
+msgid "Income Refund Account"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__info
+#: model:ir.model.fields,field_description:ptplus.field_dataport_log__info
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_log_view_form
+msgid "Info"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,help:ptplus.field_dataport_export__log_on_close
+#: model:ir.model.fields,help:ptplus.field_dataport_import__log_on_close
+#: model:ir.model.fields,help:ptplus.field_dataport_mixin__log_on_close
+msgid ""
+"Insert a record in the dataport log together with a copy of the imported or "
+"exported file. "
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_base_language_install
+msgid "Install Language"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_bank_statement_line__integration_doc_serial
+#: model:ir.model.fields,field_description:ptplus.field_account_move__integration_doc_serial
+#: model:ir.model.fields,field_description:ptplus.field_account_payment__integration_doc_serial
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document__integration_doc_serial
+msgid "Integrated Document Serial"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_move__source_billing__i
+#: model:ir.model.fields.selection,name:ptplus.selection__account_payment__source_billing__i
+#: model:ir.model.fields.selection,name:ptplus.selection__account_payment_register__source_billing__i
+#: model:ir.model.fields.selection,name:ptplus.selection__fiscal_document__source_billing__i
+#: model:ir.model.fields.selection,name:ptplus.selection__fiscal_document_type__source_billing__i
+msgid "Integration"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_tax_type__int
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_tax_type__int
+msgid "Intermediate"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_country_region__intra
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_country_region__intra
+msgid "Intra-community"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/account_move.py:0
+#, python-format
+msgid "Invalid Fiscal Document on document %s"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/webservice.py:0
+#, python-format
+msgid "Invalid Request Header"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/webservice.py:0
+#, python-format
+msgid "Invalid Request Response"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid "Invalid document number %s"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid "Invalid multi-way report tag"
+msgstr ""
+
+#. module: ptplus
+#: model:fiscal.document.type,name:ptplus.fiscal_document_type_ft
+#: model:ir.model.fields.selection,name:ptplus.selection__fiscal_document_type__type__ft
+#: model_terms:ir.ui.view,arch_db:ptplus.res_config_settings_view_form_pt
+msgid "Invoice"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_res_company__multiway_tag_invoice
+#: model:ir.model.fields,field_description:ptplus.field_res_config_settings__multiway_tag_invoice
+msgid "Invoice Report Multi-way Tags"
+msgstr ""
+
+#. module: ptplus
+#: model:fiscal.document.type,name:ptplus.fiscal_document_type_fr
+#: model:ir.model.fields.selection,name:ptplus.selection__fiscal_document_type__type__fr
+msgid "Invoice-receipt"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_move__fiscal_document_status__f
+#: model:ir.model.fields.selection,name:ptplus.selection__account_payment__fiscal_document_status__f
+#: model:ir.model.fields.selection,name:ptplus.selection__fiscal_document__fiscal_document_status__f
+msgid "Invoiced"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__fiscal_document_type__section__invoice
+msgid "Invoices"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.actions.report,name:ptplus.action_report_invoice_multiway
+msgid "Invoices (multi-way)"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.actions.report,name:ptplus.action_report_invoice_preview
+msgid "Invoices (preview)"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.res_config_settings_view_form_pt
+msgid "Issue legally accepted Portuguese invoices"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_account_move_line
+msgid "Journal Item"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__journal_ids
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_export_form
+msgid "Journals"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_tax__description
+msgid "Label on Invoices"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_chart_template____last_update
+#: model:ir.model.fields,field_description:ptplus.field_account_move____last_update
+#: model:ir.model.fields,field_description:ptplus.field_account_move_line____last_update
+#: model:ir.model.fields,field_description:ptplus.field_account_payment____last_update
+#: model:ir.model.fields,field_description:ptplus.field_account_payment_register____last_update
+#: model:ir.model.fields,field_description:ptplus.field_account_tax____last_update
+#: model:ir.model.fields,field_description:ptplus.field_account_tax_template____last_update
+#: model:ir.model.fields,field_description:ptplus.field_base_language_install____last_update
+#: model:ir.model.fields,field_description:ptplus.field_certification_service_backend____last_update
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export____last_update
+#: model:ir.model.fields,field_description:ptplus.field_dataport_import____last_update
+#: model:ir.model.fields,field_description:ptplus.field_dataport_log____last_update
+#: model:ir.model.fields,field_description:ptplus.field_dataport_mixin____last_update
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document____last_update
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document_type____last_update
+#: model:ir.model.fields,field_description:ptplus.field_ir_actions_report____last_update
+#: model:ir.model.fields,field_description:ptplus.field_ir_attachment____last_update
+#: model:ir.model.fields,field_description:ptplus.field_ir_sequence____last_update
+#: model:ir.model.fields,field_description:ptplus.field_product_category____last_update
+#: model:ir.model.fields,field_description:ptplus.field_product_template____last_update
+#: model:ir.model.fields,field_description:ptplus.field_res_company____last_update
+#: model:ir.model.fields,field_description:ptplus.field_res_config_settings____last_update
+#: model:ir.model.fields,field_description:ptplus.field_res_users____last_update
+#: model:ir.model.fields,field_description:ptplus.field_wizard_webservice_failure____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_certification_service_backend__write_uid
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__write_uid
+#: model:ir.model.fields,field_description:ptplus.field_dataport_import__write_uid
+#: model:ir.model.fields,field_description:ptplus.field_dataport_log__write_uid
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document_type__write_uid
+#: model:ir.model.fields,field_description:ptplus.field_wizard_webservice_failure__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_certification_service_backend__write_date
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__write_date
+#: model:ir.model.fields,field_description:ptplus.field_dataport_import__write_date
+#: model:ir.model.fields,field_description:ptplus.field_dataport_log__write_date
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document_type__write_date
+#: model:ir.model.fields,field_description:ptplus.field_wizard_webservice_failure__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_bank_statement_line__last_state_uid
+#: model:ir.model.fields,field_description:ptplus.field_account_move__last_state_uid
+#: model:ir.model.fields,field_description:ptplus.field_account_payment__last_state_uid
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document__last_state_uid
+msgid "Last state changed by"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_company_form_pt
+msgid "Lisboa 12345"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__log_as_reported
+msgid "Log As Reported"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__log_on_close
+#: model:ir.model.fields,field_description:ptplus.field_dataport_import__log_on_close
+#: model:ir.model.fields,field_description:ptplus.field_dataport_mixin__log_on_close
+msgid "Log On Close"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_export_form
+#: model_terms:ir.ui.view,arch_db:ptplus.dataport_import_form
+msgid "Log info"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_exemption_reason__m01
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_exemption_reason__m01
+msgid "M01 - Artigo 16.º n.º 6 do CIVA (ou similar)"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_exemption_reason__m02
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_exemption_reason__m02
+msgid "M02 - Artigo 6.º do Decreto‐Lei n.º 198/90, de 19 de Junho"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_exemption_reason__m03
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_exemption_reason__m03
+msgid "M03 - Exigibilidade de caixa"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_exemption_reason__m04
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_exemption_reason__m04
+msgid "M04 - Isento Artigo 13.º do CIVA (ou similar)"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_exemption_reason__m05
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_exemption_reason__m05
+msgid "M05 - Isento Artigo 14.º do CIVA (ou similar)"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_exemption_reason__m06
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_exemption_reason__m06
+msgid "M06 - Isento Artigo 15.º do CIVA (ou similar)"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_exemption_reason__m07
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_exemption_reason__m07
+msgid "M07 - Isento Artigo 9.º do CIVA (ou similar)"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_exemption_reason__m08
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_exemption_reason__m08
+msgid "M08 - IVA - Autoliquidação"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_exemption_reason__m09
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_exemption_reason__m09
+msgid "M09 - IVA ‐ Não confere direito a dedução"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_exemption_reason__m10
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_exemption_reason__m10
+msgid "M10 - IVA - Regime de isenção"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_exemption_reason__m11
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_exemption_reason__m11
+msgid "M11 - Regime particular do tabaco"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_exemption_reason__m12
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_exemption_reason__m12
+msgid "M12 - Regime da margem de lucro - Agências de Viagens"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_exemption_reason__m13
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_exemption_reason__m13
+msgid "M13 - Regime da margem de lucro - Bens em segunda mão"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_exemption_reason__m14
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_exemption_reason__m14
+msgid "M14 - Regime da margem de lucro - Objetos de arte"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_exemption_reason__m15
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_exemption_reason__m15
+msgid "M15 - Regime da margem de lucro - Objetos de coleção e antiguidades"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_exemption_reason__m16
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_exemption_reason__m16
+msgid "M16 - Isento Artigo 14.º do RITI (ou similar)"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_exemption_reason__m20
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_exemption_reason__m20
+msgid "M17 - IVA - Regime forfetário"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_exemption_reason__m99
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_exemption_reason__m99
+msgid "M99 - Não sujeito; não tributado (ou similar)"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_country_region__pt-ma
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_country_region__pt-ma
+msgid "Madeira"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_move__source_billing__m
+#: model:ir.model.fields.selection,name:ptplus.selection__account_payment__source_billing__m
+#: model:ir.model.fields.selection,name:ptplus.selection__account_payment_register__source_billing__m
+#: model:ir.model.fields.selection,name:ptplus.selection__fiscal_document__source_billing__m
+#: model:ir.model.fields.selection,name:ptplus.selection__fiscal_document_type__source_billing__m
+msgid "Manual/Restore"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_wizard_webservice_failure__error_msg
+msgid "Message"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_log__method
+msgid "Method"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_certification_service_backend__module
+msgid "Module"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_export__period__month_curr
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_import__period__month_curr
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_mixin__period__month_curr
+msgid "Month - Current"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_export__period__month_last
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_import__period__month_last
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_mixin__period__month_last
+msgid "Month - Last"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/account_move.py:0
+#, python-format
+msgid "Move number %s cannot exceed 20 characters."
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_dataport_log_filter
+msgid "My Dataports"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_certification_service_backend__name
+#: model:ir.model.fields,field_description:ptplus.field_dataport_log__name
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document_type__name
+msgid "Name"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_tax_type__ns
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_tax_type__ns
+msgid "Non Applicable"
+msgstr ""
+
+#. module: ptplus
+#: model:res.country.group,name:ptplus.non_eu
+msgid "Non-EU Countries"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/wizards/dataport_export.py:0
+#, python-format
+msgid "None."
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_move__fiscal_document_status__n
+#: model:ir.model.fields.selection,name:ptplus.selection__account_payment__fiscal_document_status__n
+#: model:ir.model.fields.selection,name:ptplus.selection__fiscal_document__fiscal_document_status__n
+msgid "Normal"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_dataport_log_filter
+msgid "Not Reported"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_special_regime__n30art9
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_special_regime__n30art9
+msgid "Nº 30 Art.º 9º"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/wizards/dataport_export.py:0
+#, python-format
+msgid "Object"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,help:ptplus.field_account_tax__pt_genre
+msgid ""
+"One of the possible tax genres. Only available for Portuguese companies."
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document_type__sequence
+msgid "Order Sequence"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_log__origin
+msgid "Origin"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__res_company__multiway_tag_invoice__orig_copy
+#: model:ir.model.fields.selection,name:ptplus.selection__res_company__multiway_tag_payment__orig_copy
+msgid "Original and Copy"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__res_company__multiway_tag_invoice__orig_dup
+#: model:ir.model.fields.selection,name:ptplus.selection__res_company__multiway_tag_payment__orig_dup
+msgid "Original and Duplicate"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__res_company__multiway_tag_invoice__orig_dup_trip
+#: model:ir.model.fields.selection,name:ptplus.selection__res_company__multiway_tag_payment__orig_dup_trip
+msgid "Original, Duplicate and Triplicate"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_tax_type__out
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_tax_type__out
+msgid "Other"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_subject__ogs
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_subject__ogs
+msgid "Other Goods and Services"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_special_regime__ouro
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_special_regime__ouro
+msgid "Ouro"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_log__direction__out
+msgid "Out"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_log__method__pdf
+#: model_terms:ir.ui.view,arch_db:ptplus.view_dataport_log_filter
+msgid "PDF"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_export__format__pdf
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_import__format__pdf
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_mixin__format__pdf
+msgid "PDF File"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_users_form_pt
+#: model_terms:ir.ui.view,arch_db:ptplus.view_users_form_simple_modif_pt
+msgid "Password"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/wizards/dataport_export.py:0
+#, python-format
+msgid "Path"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/account_payment.py:0
+#, python-format
+msgid "Payment"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_move_form_pt
+msgid "Payment Number"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.actions.report,name:ptplus.action_report_payment_receipt_multiway
+msgid "Payment Receipt (multi-way)"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.actions.report,name:ptplus.action_report_payment_receipt_preview
+msgid "Payment Receipt (preview)"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.report_payment_receipt_document
+msgid "Payment:"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_account_payment
+#: model:ir.model.fields.selection,name:ptplus.selection__fiscal_document_type__section__pay
+msgid "Payments"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_special_regime__peq_ret
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_special_regime__peq_ret
+msgid "Pequenos Retalhistas"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__period
+#: model:ir.model.fields,field_description:ptplus.field_dataport_import__period
+#: model:ir.model.fields,field_description:ptplus.field_dataport_mixin__period
+msgid "Period"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid "Please add lines to document %s and try again"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/wizards/dataport_import.py:0
+#, python-format
+msgid "Please load the file to import and try again"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document_type__point_of_sale
+msgid "Point of Sale"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.res_config_settings_view_form_pt
+msgid "Portugal"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_res_company__pt_invoicing
+#: model:ir.model.fields,field_description:ptplus.field_res_config_settings__pt_invoicing
+msgid "Portuguese Invoicing"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.ui.menu,name:ptplus.account_reports_pt_statements_menu
+msgid "Portuguese Statements"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_account_payment_form_pt
+msgid "Print"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_bank_statement_line__hash_control
+#: model:ir.model.fields,field_description:ptplus.field_account_move__hash_control
+#: model:ir.model.fields,field_description:ptplus.field_account_payment__hash_control
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document__hash_control
+msgid "Private key version"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_product_category
+msgid "Product Category"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_product_template
+msgid "Product Template"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_res_company__pt_qrcode_pos
+#: model:ir.model.fields,field_description:ptplus.field_res_config_settings__pt_qrcode_pos
+msgid "QR Code Position"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_export__period__quarter_curr
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_import__period__quarter_curr
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_mixin__period__quarter_curr
+msgid "Quarter - Current"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_export__period__quarter_last
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_import__period__quarter_last
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_mixin__period__quarter_last
+msgid "Quarter - Last"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirc_10000_cap_outros
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirs_10000_ti
+msgid "RF 10%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirs_11500_ti
+msgid "RF 11,5%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirs_12500_ti
+msgid "RF 12,5%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirs_16500_indemn
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirs_16500_ti
+msgid "RF 16,5%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirs_02875_ti
+msgid "RF 2,875%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirs_20000_ti
+msgid "RF 20%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirc_21500_org_est_res
+msgid "RF 21,5%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirc_25000_cap_juros
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirc_25000_cap_outros
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirc_25000_comiss
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirc_25000_org_est_nres
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirc_25000_pred
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirs_25000_art72
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirs_25000_pred
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirs_25000_terc
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirs_25000_ti
+msgid "RF 25%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirs_28000_art71
+msgid "RF 28%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirc_35000_cap_outros
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirc_35000_jogo
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirs_35000_art73
+msgid "RF 35%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirs_04125_ti
+msgid "RF 4,125%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirs_05000_ti
+msgid "RF 5%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirs_05750_ti
+msgid "RF 5,75%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirs_06250_ti
+msgid "RF 6,25%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirs_08250_ti
+msgid "RF 8,25%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax,description:ptplus.1_account_tax_template_rfirs_ns
+msgid "RF N/S"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/wizards/dataport_export.py:0
+#, python-format
+msgid "Reason"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/account_payment.py:0
+#: model:fiscal.document.type,name:ptplus.fiscal_document_type_rg
+#: model:ir.model.fields.selection,name:ptplus.selection__fiscal_document_type__type__rg
+#: model_terms:ir.ui.view,arch_db:ptplus.res_config_settings_view_form_pt
+#, python-format
+msgid "Receipt"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_account_payment_tree_pt
+msgid "Receipt No."
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_payment__receipt_number
+msgid "Receipt Number"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/account_payment.py:0
+#, python-format
+msgid "Receipt Number %s must be unique per Company"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_res_company__multiway_tag_payment
+#: model:ir.model.fields,field_description:ptplus.field_res_config_settings__multiway_tag_payment
+msgid "Receipt Report Multi-way Tags"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.report_payment_receipt_document
+msgid "Receipt:"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_tax_type__red
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_tax_type__red
+msgid "Reduced"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_account_payment_register
+msgid "Register Payment"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_ir_actions_report
+msgid "Report Action"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_log__reported
+#: model_terms:ir.ui.view,arch_db:ptplus.view_dataport_log_filter
+msgid "Reported"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_log__result
+msgid "Result"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document_type__reversion
+msgid "Reversion"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_dataport_log_filter
+msgid "SAF-T"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_log__type__saf-t
+msgid "SAF-T PT"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document_type__section
+msgid "SAF/T Section"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_is
+msgid "SD"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_dataport_log_filter
+msgid "Search Dataport Log"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.fiscal_document_type_view_search
+msgid "Section"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_move__fiscal_document_status__s
+#: model:ir.model.fields.selection,name:ptplus.selection__account_payment__fiscal_document_status__s
+#: model:ir.model.fields.selection,name:ptplus.selection__fiscal_document__fiscal_document_status__s
+msgid "Self-billing"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_special_regime__sdd
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_special_regime__sdd
+msgid "Sem direito a dedução"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_ir_sequence
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document_type__sequence_id
+msgid "Sequence"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/ir_sequence.py:0
+#, python-format
+msgid ""
+"Sequence %s's implementation must forbid gaps in order to be compliant with "
+"tax authority standards."
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/ir_sequence.py:0
+#, python-format
+msgid ""
+"Sequence %s's increment must be 1 in order to be compliant with tax "
+"authority standards."
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/ir_sequence.py:0
+#, python-format
+msgid ""
+"Sequence %s's prefix is not compliant with tax authority rules. A valid "
+"prefix must have a single occurrence of the '/' character on the last "
+"position. Also no spaces are allowed"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid ""
+"Sequence '%s' is a duplicate of sequence '%s'. Please change the prefix (or "
+"code) and try again."
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/ir_sequence.py:0
+#, python-format
+msgid ""
+"Sequence '%s' must have no suffix in order to be compliant with tax "
+"authority standards."
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document_type__sequence_code
+msgid "Sequence Code"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,help:ptplus.field_account_bank_statement_line__integration_doc_serial
+#: model:ir.model.fields,help:ptplus.field_account_move__integration_doc_serial
+#: model:ir.model.fields,help:ptplus.field_account_payment__integration_doc_serial
+#: model:ir.model.fields,help:ptplus.field_fiscal_document__integration_doc_serial
+msgid ""
+"Serial Number of the document being integrated. Insert the incremental "
+"numerical part only (including left side zeros)"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_special_regime__scc
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_special_regime__scc
+msgid "Serviços de Construção Civil"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,help:ptplus.field_dataport_export__log_as_reported
+msgid ""
+"Set True if the file has been successfully submitted to the intended "
+"destination. In that case the dataport log record will be marked as "
+"Reported."
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,help:ptplus.field_fiscal_document_type__point_of_sale
+msgid ""
+"Set True if you want to use this fiscal document type on the Point of Sale "
+"app (it will be hidden outside of it)."
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_res_company__share_capital
+msgid "Share Capital"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.fiscal_document_type_view_search
+msgid "Show active document types"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.fiscal_document_type_view_search
+msgid "Show inactive document types"
+msgstr ""
+
+#. module: ptplus
+#: model:fiscal.document.type,name:ptplus.fiscal_document_type_fa
+#: model:ir.model.fields.selection,name:ptplus.selection__fiscal_document_type__type__fs
+msgid "Simplified Invoice"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/account_move.py:0
+#, python-format
+msgid "Simplified invoices can only be issued to national customers"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/account_move.py:0
+#, python-format
+msgid "Simplified invoices can only be issued using the EUR currency"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_bank_statement_line__source_billing
+#: model:ir.model.fields,field_description:ptplus.field_account_move__source_billing
+#: model:ir.model.fields,field_description:ptplus.field_account_payment__source_billing
+#: model:ir.model.fields,field_description:ptplus.field_account_payment_register__source_billing
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document__source_billing
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document_type__source_billing
+msgid "Source Method"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_genre__is
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_genre__is
+msgid "Stamp Duty"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__state
+#: model:ir.model.fields,field_description:ptplus.field_dataport_import__state
+#: model:ir.model.fields,field_description:ptplus.field_dataport_mixin__state
+msgid "State"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__statement_type
+msgid "Statement Type"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_subject__stock
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_subject__stock
+msgid "Stock"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_certification_service_backend__submodule
+msgid "Submodule"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_dataport_log_filter
+msgid "Success"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_move__fiscal_document_status__r
+#: model:ir.model.fields.selection,name:ptplus.selection__account_payment__fiscal_document_status__r
+#: model:ir.model.fields.selection,name:ptplus.selection__fiscal_document__fiscal_document_status__r
+msgid "Summary"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,help:ptplus.field_res_company__account_officer_vat
+msgid "TIN of the certified accounting officer"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.res_config_settings_view_form_pt
+msgid "Tags to differentiate document copies"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_account_tax
+msgid "Tax"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/account_tax.py:0
+#, python-format
+msgid "Tax %s cannot have a %s tag."
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/account_tax.py:0
+#, python-format
+msgid "Tax %s must have one and only %s tag."
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_users_form_pt
+#: model_terms:ir.ui.view,arch_db:ptplus.view_users_form_simple_modif_pt
+msgid "Tax Authority"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_res_users__tax_auth_password
+msgid "Tax Authority Password"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_res_users__tax_auth_username
+msgid "Tax Authority Username"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_account_tax_template
+msgid "Templates for Taxes"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_log__method__txt
+msgid "Text"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_export__format__txt
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_import__format__txt
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_mixin__format__txt
+msgid "Text File"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/wizards/dataport_export.py:0
+#, python-format
+msgid ""
+"The Europe country group cannot be found. Please update the base module."
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid ""
+"The Point of Sale field only supports Invoice-receipts and Credit Notes."
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/wizards/dataport_export.py:0
+#, python-format
+msgid ""
+"The SAF-T file has been successfully generated but it couldn't be validated."
+" Please contact your Odoo service provider or try an alternative validation "
+"process. Error: %s"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.constraint,message:ptplus.constraint_fiscal_document_type_name_company_uniq
+msgid "The fiscal doc. type name must be unique on every company"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.constraint,message:ptplus.constraint_fiscal_document_type_sequence_uniq
+msgid "The fiscal doc. type sequence must be globally unique."
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/account_move.py:0
+#, python-format
+msgid "The maximum allowed amount for a simplified invoice is %s euros."
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/account_move.py:0
+#, python-format
+msgid ""
+"The maximum allowed amount for a simplified invoice issued to a non-"
+"anonymous consumer is %s euros."
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,help:ptplus.field_account_bank_statement_line__source_billing
+#: model:ir.model.fields,help:ptplus.field_account_move__source_billing
+#: model:ir.model.fields,help:ptplus.field_account_payment__source_billing
+#: model:ir.model.fields,help:ptplus.field_fiscal_document__source_billing
+#: model:ir.model.fields,help:ptplus.field_fiscal_document_type__source_billing
+msgid ""
+"The method (or source) used to insert the document. If you \n"
+"don't understand the underlying concepts, you should keep \n"
+"the default value (Application). Possible values are:\n"
+"* Application: The document was created in this system.\n"
+"* Integration: The document was issued in another application \n"
+"and imported into this system.\n"
+"* Manual/Restore: The document was created in this system \n"
+"but was somehow lost and has been restored either from \n"
+"paper or digital sources.\n"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,help:ptplus.field_fiscal_document_type__sequence
+msgid ""
+"The order sequence field is used to define the order in which the fiscal "
+"document types are applied."
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,help:ptplus.field_account_payment__receipt_number
+msgid "The payment receipt fiscal document number (PT)."
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/wizards/dataport_import.py:0
+#, python-format
+msgid "The start and end dates are mandatory"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/wizards/dataport_import.py:0
+#, python-format
+msgid "The start date must be before the end date"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,help:ptplus.field_account_bank_statement_line__fiscal_document_type_id
+#: model:ir.model.fields,help:ptplus.field_account_move__fiscal_document_type_id
+#: model:ir.model.fields,help:ptplus.field_account_payment__fiscal_document_type_id
+#: model:ir.model.fields,help:ptplus.field_fiscal_document__fiscal_document_type_id
+msgid ""
+"The type of fiscal document associated with a record. As a general "
+"principle, a fiscal document is a document that will be included in the "
+"company's SAF-T file"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/res_company.py:0
+#, python-format
+msgid ""
+"The value %s for the Accountant TIN does not seem to be valid. \n"
+"Note: the expected format is %s"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/account_tax.py:0
+#, python-format
+msgid "The value of field Amount Type on %s is not compatible with VAT taxes"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/res_company.py:0
+#, python-format
+msgid "The value of field Share Capital must be positive."
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.res_config_settings_view_form_pt
+msgid ""
+"These tags will be printed on every multi-way document report copy. The "
+"choice also sets the number of desired copies."
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,help:ptplus.field_product_category__property_account_expense_refund_categ_id
+msgid "This account will be used for invoices to value expenses refunds."
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,help:ptplus.field_product_category__property_account_income_refund_categ_id
+msgid "This account will be used for invoices to value sales refunds."
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,help:ptplus.field_product_product__property_account_expense_refund_id
+#: model:ir.model.fields,help:ptplus.field_product_template__property_account_expense_refund_id
+msgid "This account will be used on expenses refunds for the current product."
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,help:ptplus.field_product_product__property_account_income_refund_id
+#: model:ir.model.fields,help:ptplus.field_product_template__property_account_income_refund_id
+msgid "This account will be used on sales refunds for the current product."
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/account_move.py:0
+#, python-format
+msgid "This action isn't available for fiscal documents."
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid "This document can no longer be deleted."
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_log__date_to
+msgid "To"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_dataport_log_filter
+msgid "To Date"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__res_company__pt_qrcode_pos__top
+msgid "Top of first page"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,help:ptplus.field_dataport_export__error
+#: model:ir.model.fields,help:ptplus.field_dataport_import__error
+#: model:ir.model.fields,help:ptplus.field_dataport_mixin__error
+msgid "True if there's an error or warning in the dataport operation"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_log__type
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document_type__type
+#: model_terms:ir.ui.view,arch_db:ptplus.fiscal_document_type_view_search
+#: model_terms:ir.ui.view,arch_db:ptplus.view_dataport_log_filter
+msgid "Type"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/webservice.py:0
+#, python-format
+msgid "Unexpected Error"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/webservice.py:0
+#, python-format
+msgid "Unknown Error"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_fiscal_document_type__used
+msgid "Used"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_users_form_pt
+#: model_terms:ir.ui.view,arch_db:ptplus.view_users_form_simple_modif_pt
+msgid "Username"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_res_users
+msgid "Users"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_genre__iva
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_genre__iva
+msgid "VAT"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_aq_exist
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_aq_exist_aaa
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_aq_exist_art_15
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_aq_exist_art_22
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_aq_exist_prt
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_aq_extrac_exist
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_aq_extrac_imob
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_aq_extrac_obs
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_aq_imob_aaa
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_aq_imob_art_15
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_aq_imob_art_22
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_aq_obs
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_aq_obs_prt
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_exist_aaa
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_exist_cdd
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_exist_drs
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_exist_sdd
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_extrac_exist
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_extrac_imob
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_extrac_obs
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_imob_aaa
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_imob_drs
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_imob_vtt
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_intrac_exist
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_intrac_imob
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_intrac_obs
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_obs_ccv
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_obs_cdd
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_obs_drs
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_obs_ege
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_0_obs_sdd
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_nd_aq_exist_vtl
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_nd_aq_gasolina
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_nd_aq_imob
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_nd_aq_imob_vta
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_nd_aq_obs
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_nd_aq_obs_vta
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_nd_aq_obs_vtl
+msgid "VAT 0%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_iva_12
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_12_aq_exist
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_12_aq_imob
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_12_aq_obs
+msgid "VAT 12%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_13_aq_exist
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_13_aq_imob
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_13_aq_obs
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_13_exist
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_13_imob
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_13_obs
+msgid "VAT 13%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_iva_16
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_16_aq_exist
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_16_aq_exist_vta
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_16_aq_imob
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_16_aq_imob_vta
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_16_aq_intrac_exist
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_16_aq_intrac_imob
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_16_aq_intrac_obs
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_16_aq_obs
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_16_aq_obs_vta
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_16_pd50_aq_gasoleo_incl
+msgid "VAT 16%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_iva_18
+msgid "VAT 18%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_iva_22
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_22_aq_exist
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_22_aq_exist_vta
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_22_aq_imob
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_22_aq_imob_vta
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_22_aq_intrac_exist
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_22_aq_intrac_imob
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_22_aq_intrac_obs
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_22_aq_obs
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_22_aq_obs_vta
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_22_pd50_aq_gasoleo_incl
+msgid "VAT 22%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_aq_exist
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_aq_exist_drs
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_aq_exist_vta
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_aq_extrac_exist
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_aq_extrac_imob
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_aq_imob
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_aq_imob_ccv
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_aq_imob_drs
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_aq_imob_ege
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_aq_imob_vta
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_aq_intrac_exist
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_aq_intrac_imob
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_aq_intrac_obs
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_aq_obs
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_aq_obs_ccv
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_aq_obs_drs
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_aq_obs_ege
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_aq_obs_vta
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_exist
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_imob
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_obs
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_23_pd50_aq_gasoleo_incl
+msgid "VAT 23%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_iva_4
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_4_aq_exist
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_4_aq_imob
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_4_aq_obs
+msgid "VAT 4%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_iva_5
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_5_aq_exist
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_5_aq_imob
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_5_aq_obs
+msgid "VAT 5%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_6_aq_exist
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_6_aq_imob
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_6_aq_obs
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_6_exist
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_6_imob
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_6_obs
+msgid "VAT 6%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_iva_9
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_9_aq_exist
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_9_aq_imob
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_9_aq_obs
+msgid "VAT 9%"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_tax__pt_vat_country_region
+#: model:ir.model.fields,field_description:ptplus.field_account_tax_template__pt_vat_country_region
+msgid "VAT Country/Region"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_tax__pt_vat_exemption_reason
+#: model:ir.model.fields,field_description:ptplus.field_account_tax_template__pt_vat_exemption_reason
+msgid "VAT Exemption Reason"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_iva_ns
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_ns
+#: model:account.tax.template,description:ptplus.account_tax_template_iva_ns_aq
+msgid "VAT N/A"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_tax__pt_vat_special_regime
+#: model:ir.model.fields,field_description:ptplus.field_account_tax_template__pt_vat_special_regime
+msgid "VAT Special Regime"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_tax__pt_vat_subject
+#: model:ir.model.fields,field_description:ptplus.field_account_tax_template__pt_vat_subject
+msgid "VAT Subject"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_account_tax__pt_vat_tax_type
+#: model:ir.model.fields,field_description:ptplus.field_account_tax_template__pt_vat_tax_type
+msgid "VAT Tax Type"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__validate
+msgid "Validate"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/wizards/dataport_export.py:0
+#, python-format
+msgid "Validation is disabled. File validation status unknown."
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__values
+#: model:ir.model.fields,field_description:ptplus.field_dataport_log__values
+msgid "Values"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_special_regime__vta
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_special_regime__vta
+msgid "Viaturas de Turismo Aq."
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_special_regime__vtl
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_special_regime__vtl
+msgid "Viaturas de Turismo Loc."
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_special_regime__vtt
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_special_regime__vtt
+msgid "Viaturas de Turismo Transm."
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_rf_10000
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirc_10000_cap_outros
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirs_10000_ti
+msgid "WHT 10%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_rf_11500
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirs_11500_ti
+msgid "WHT 11.5%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_rf_12500
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirs_12500_ti
+msgid "WHT 12.5%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_rf_16500
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirs_16500_indemn
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirs_16500_ti
+msgid "WHT 16.5%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_rf_02875
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirs_02875_ti
+msgid "WHT 2.875%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_rf_20000
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirs_20000_ti
+msgid "WHT 20%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_rf_21500
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirc_21500_org_est_res
+msgid "WHT 21.5%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_rf_25000
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirc_25000_cap_juros
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirc_25000_cap_outros
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirc_25000_comiss
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirc_25000_org_est_nres
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirc_25000_pred
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirs_25000_art72
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirs_25000_pred
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirs_25000_terc
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirs_25000_ti
+msgid "WHT 25%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_rf_28000
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirs_28000_art71
+msgid "WHT 28%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_rf_35000
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirc_35000_cap_outros
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirc_35000_jogo
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirs_35000_art73
+msgid "WHT 35%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_rf_04125
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirs_04125_ti
+msgid "WHT 4.125%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_rf_05000
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirs_05000_ti
+msgid "WHT 5%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_rf_05750
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirs_05750_ti
+msgid "WHT 5.75%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_rf_06250
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirs_06250_ti
+msgid "WHT 6.25%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_rf_08250
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirs_08250_ti
+msgid "WHT 8.25%"
+msgstr ""
+
+#. module: ptplus
+#: model:account.tax.group,name:ptplus.tax_group_rf_ns
+#: model:account.tax.template,description:ptplus.account_tax_template_rfirs_ns
+msgid "WHT N/A"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,field_description:ptplus.field_dataport_export__warnings
+#: model:ir.model.fields,field_description:ptplus.field_dataport_import__warnings
+#: model:ir.model.fields,field_description:ptplus.field_dataport_mixin__warnings
+msgid "Warnings"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_log__method__webservice
+#: model_terms:ir.ui.view,arch_db:ptplus.view_dataport_log_filter
+msgid "Webservice"
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_wizard_webservice_failure
+msgid "Webservice Failure"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model,name:ptplus.model_wizard_webservice_failure
+msgid "Webservice Failure Wizard"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/webservice.py:0
+#, python-format
+msgid "Webservice security error: empty username or password."
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/webservice.py:0
+#, python-format
+msgid "Webservice security error: invalid public key certificate."
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields,help:ptplus.field_dataport_export__validate
+msgid ""
+"When enabled the file will undergo a technical inspection (XSD schema) before being delivered to the user. As it's a very time consuming task, you may want to disable it when a large file is expected.\n"
+"Uncheck when you prefer to use an external validator."
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_genre__rf
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_genre__rf
+msgid "Withholding Tax"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_log__method__xml
+#: model_terms:ir.ui.view,arch_db:ptplus.view_dataport_log_filter
+msgid "XML"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_export__format__xml
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_import__format__xml
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_mixin__format__xml
+msgid "XML File"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_export__period__year_curr
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_import__period__year_curr
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_mixin__period__year_curr
+msgid "Year - Current"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_export__period__year_last
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_import__period__year_last
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_mixin__period__year_last
+msgid "Year - Last"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid "You can no longer change the document partner."
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/res_company.py:0
+#, python-format
+msgid ""
+"You can no longer revert the Portuguese Invoicing option back to False."
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/ir_actions_report.py:0
+#, python-format
+msgid "You can't print draft fiscal documents"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/ir_actions_report.py:0
+#, python-format
+msgid "You can't print unissued or incorrectly issued fiscal documents"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid ""
+"You're trying to issue a fiscal document on company %s with a fiscal "
+"document type that belongs to company %s"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/models/fiscal_document.py:0
+#, python-format
+msgid ""
+"You're trying to post a document which date (%s) is prior to the last of the"
+" same kind (%s). Please change document date to %s or later."
+msgstr ""
+
+#. module: ptplus
+#: model_terms:ir.ui.view,arch_db:ptplus.view_wizard_webservice_failure
+msgid "_Close"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax__pt_vat_special_regime__avt
+#: model:ir.model.fields.selection,name:ptplus.selection__account_tax_template__pt_vat_special_regime__avt
+msgid "avt"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_export__state__done
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_import__state__done
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_mixin__state__done
+msgid "done"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.actions.report,print_report_name:ptplus.action_report_invoice_multiway
+#: model:ir.actions.report,print_report_name:ptplus.action_report_payment_receipt_multiway
+msgid "object.pt_get_fullname(lang=object.partner_id.lang)"
+msgstr ""
+
+#. module: ptplus
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_export__state__select
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_import__state__select
+#: model:ir.model.fields.selection,name:ptplus.selection__dataport_mixin__state__select
+msgid "select"
+msgstr ""
+
+#. module: ptplus
+#: code:addons/ptplus/wizards/dataport_mixin.py:0
+#, python-format
+msgid "to"
+msgstr ""

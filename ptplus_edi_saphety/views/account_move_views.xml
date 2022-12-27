@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- Sales invoice form -->
+    <record id="view_move_form" model="ir.ui.view">
+        <field name="name">account.move.form</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//group[@id='other_tab_group']" position="inside">
+                <group string="Saphety EDI">
+                    <field
+                        name="saphety_request_id"
+                        string="Request ID"
+                        attrs="{'invisible': [('saphety_document_id', '!=', False)]}"
+                    />
+                    <field
+                        name="saphety_request_status"
+                        string="Request Status"
+                        attrs="{'invisible': [('saphety_document_id', '!=', False)]}"
+                    />
+                    <field
+                        name="saphety_document_id"
+                        string="Document ID"
+                        attrs="{'invisible': [('saphety_document_id', '=', False)]}"
+                    />
+                    <field
+                        name="saphety_document_status"
+                        string="Document Status"
+                        attrs="{'invisible': [('saphety_document_id', '=', False)]}"
+                    />
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

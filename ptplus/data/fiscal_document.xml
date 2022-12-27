@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo noupdate="1">
+
+    <!-- Sequences for fiscal documents -->
+    <record id="sequence_invoice_pt" model="ir.sequence">
+        <field name="name">Faturas a Clientes</field>
+        <field name="code">pt.account.invoice</field>
+        <field name="implementation">no_gap</field>
+        <field name="prefix">A/</field>
+        <field name="padding">5</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+
+    <record id="sequence_credit_note_pt" model="ir.sequence">
+        <field name="name">Notas de Crédito a Clientes</field>
+        <field name="code">pt.account.credit_note</field>
+        <field name="implementation">no_gap</field>
+        <field name="prefix">A/</field>
+        <field name="padding">5</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+
+    <record id="sequence_receipt_pt" model="ir.sequence">
+        <field name="name">Recibos a Clientes</field>
+        <field name="code">pt.account.payment.receipt</field>
+        <field name="implementation">no_gap</field>
+        <field name="prefix">A/</field>
+        <field name="padding">5</field>
+        <field name="number_next">1</field>
+        <field name="number_increment">1</field>
+    </record>
+
+    <!-- FISCAL DOCUMENT TYPES -->
+
+    <!-- Section 4.1 - Sales Invoices -->
+    <record id="fiscal_document_type_ft" model="fiscal.document.type">
+        <field name="type">FT</field>
+        <field name="name">Invoice</field>
+        <field name="source_billing">P</field>
+        <field name="sequence" eval="10" />
+        <field name="sequence_id" eval="ref('sequence_invoice_pt')" />
+    </record>
+    <record id="fiscal_document_type_fa" model="fiscal.document.type">
+        <field name="type">FS</field>
+        <field name="name">Simplified Invoice</field>
+        <field name="active">False</field>
+        <field name="source_billing">P</field>
+        <field name="sequence" eval="20" />
+    </record>
+    <record id="fiscal_document_type_fr" model="fiscal.document.type">
+        <field name="type">FR</field>
+        <field name="name">Invoice-receipt</field>
+        <field name="active">False</field>
+        <field name="source_billing">P</field>
+        <field name="sequence" eval="30" />
+    </record>
+    <record id="fiscal_document_type_nd" model="fiscal.document.type">
+        <field name="type">ND</field>
+        <field name="name">Debit Note</field>
+        <field name="active">False</field>
+        <field name="source_billing">P</field>
+        <field name="sequence" eval="40" />
+    </record>
+    <record id="fiscal_document_type_nc" model="fiscal.document.type">
+        <field name="type">NC</field>
+        <field name="name">Credit Note</field>
+        <field name="source_billing">P</field>
+        <field name="sequence" eval="50" />
+        <field name="sequence_id" eval="ref('sequence_credit_note_pt')" />
+    </record>
+
+    <!-- Section 4.4 - Payments -->
+    <record id="fiscal_document_type_rg" model="fiscal.document.type">
+        <field name="type">RG</field>
+        <field name="name">Receipt</field>
+        <field name="source_billing">P</field>
+        <field name="sequence" eval="180" />
+        <field name="sequence_id" eval="ref('sequence_receipt_pt')" />
+    </record>
+    <record id="fiscal_document_type_rc" model="fiscal.document.type">
+        <field name="type">RC</field>
+        <field name="name">Cash Basis Receipt</field>
+        <field name="active">False</field>
+        <field name="source_billing">P</field>
+        <field name="sequence" eval="190" />
+    </record>
+
+</odoo>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+  <data>
+
+    <menuitem name="NMVS" id="nmvs_menu_root"/>
+
+    <!-- menu categories -->
+    <menuitem name="Comunicações" id="nmvs_operations" parent="nmvs_menu_root"/>
+
+    <menuitem id="menu_nmvs_config"
+        parent="nmvs_menu_root"
+        name="Configurações"
+        groups="sic_nmvs_connector.nmvs_technical"
+        sequence="50"/>
+
+
+    <!-- actions -->
+
+    <menuitem name="Comunicações" id="nmvs_operations_list" parent="nmvs_operations"
+              action="nmvs_operation_action_window"/>
+
+    <menuitem name="Efetuar Comunicação Manual" id="nmvs_manual_operation" parent="nmvs_operations"
+              action="nmvs_manual_operation_action_window"/>
+
+    <menuitem name="Efetuar Comunicação Falhada" id="nmvs_mixed_bulk_operation" parent="nmvs_operations"
+              action="nmvs_mixed_bulk_operation_action_window"/>
+
+    <menuitem id="menu_nmvs_general_settings"
+        name="Definições"
+        parent="menu_nmvs_config"
+        sequence="0"
+        action="action_nmvs_config_settings"
+        groups="sic_nmvs_connector.nmvs_technical"/>
+
+
+    <menuitem name="Importal Listagem Infarmed"
+        action="import_product_notification_list_form_action_window" id="menu_action_import_product_notification_list"
+        parent="stock.menu_stock_inventory_control"
+        sequence="102"/>
+
+  </data>
+</odoo>

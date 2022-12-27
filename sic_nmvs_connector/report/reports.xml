@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+       <record id="report_anexo_7_rec" model="ir.actions.report">
+            <field name="name">Anexo VII</field>
+            <field name="model">purchase.order</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">sic_nmvs_connector.report_anexo_7</field>
+            <field name="report_file">sic_nmvs_connector.report_anexo_7</field>
+            <field name="print_report_name">'Anexo VII - %s' % (object.name)</field>
+            <field name="binding_model_id" ref="purchase.model_purchase_order"/>
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="sic_nmvs_connector.paperformat_no_header_no_footer"/>
+        </record>
+
+       <record id="report_aue_rec" model="ir.actions.report">
+            <field name="name">Pedido AUE</field>
+            <field name="model">sale.order</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">sic_nmvs_connector.report_aue</field>
+            <field name="report_file">sic_nmvs_connector.report_aue</field>
+            <field name="print_report_name">'Pedido AUE - %s' % (object.name)</field>
+            <field name="binding_model_id" ref="sale.model_sale_order"/>
+            <field name="binding_type">report</field>
+            <field name="paperformat_id" ref="sic_nmvs_connector.paperformat_no_header_no_footer_aue"/>
+        </record>
+
+
+    </data>
+</odoo>

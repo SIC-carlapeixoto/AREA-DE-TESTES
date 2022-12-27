@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+
+        <record id="get_picking_serials_form" model="ir.ui.view">
+              <field name="name">Importar Serial Nº</field>
+              <field name="model">get.picking.serials</field>
+              <field name="arch" type="xml">
+                  <form>
+                      <header>
+                          <button
+                              string="Enviar Serial Nº para a Saída"
+                              name="set_lots_in_picking"
+                              type="object"
+                              class="oe_highlight"
+                              attrs="{'invisible': [('lot_ids', '=', False)]}"
+                          />
+                      </header>
+                      <sheet string="Operação">
+                          <group>
+                            <group>
+                                <field name="picking_id"/>
+                                <field name="in_picking_id" options="{'no_create_edit': True, 'no_quick_create': True}" domain="[('picking_type_code', '=', 'incoming'), ('state', '=', 'done')]" />
+                            </group>
+                            <group>
+
+                            </group>
+                          </group>
+                          <notebook>
+                              <page string="Serial Nº">
+                                <field name="lot_ids" mode="tree" nolabel="1" required="1" >
+                                  <!-- 'readonly': [('operation_done', '=', True)] -->
+                                  <tree editable="bottom" >
+                                      <field name="product_id" required="1" readonly="1"/>
+                                      <field name="lot_id" required="1" readonly="1"/>
+                                      <field name="batch_code" required="1" readonly="1"/>
+                                      <field name="expiration_date" required="1" readonly="1"/>
+                                  </tree>
+                              </field>
+                              </page>
+                          </notebook>  
+
+                      </sheet>
+                      <footer>
+                      </footer>
+                  </form>
+              </field>
+          </record>
+
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="get_picking_serials_action_window">
+      <field name="name">Importar Serial Nº</field>
+      <field name="res_model">get.picking.serials</field>
+      <field name="view_mode">form</field>
+      <field name="target">new</field>
+    </record>
+
+  </data>
+</odoo>

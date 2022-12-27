@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.nmvs</field>
+        <field name="model">res.config.settings</field>
+        <field name="priority" eval="10"/>
+        <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('settings')]" position="inside">
+
+                <div class="app_settings_block"
+                    string="NMVS Connector"
+                    data-string="NMVS Connector"
+                    data-key="sic_nmvs_connector"
+                    groups="sic_nmvs_connector.nmvs_technical">
+                    <h2>Certificado</h2>
+                    <div class="row mt16 o_settings_container" name="catalog_setting_container">
+                      <div class="col-12 col-lg-6 o_setting_box" id="external_omv_setting">
+                        <div class="o_setting_right_pane">
+                            <div class="content-group">
+                              <div class="mt16 row">
+                                  <!-- <label for="nmvs_us_name" string="US Name" class="col-3 col-lg-3"/>
+                                  <field name="nmvs_us_name"/>
+                                  <label for="nmvs_us_version" string="US Version" class="col-3 col-lg-3"/>
+                                  <field name="nmvs_us_version"/>
+                                  <label for="nmvs_us_supplier" string="US Supplier" class="col-3 col-lg-3"/>
+                                  <field name="nmvs_us_supplier"/>
+                                  <label for="nmvs_transaction_language" string="US Lang" class="col-3 col-lg-3"/>
+                                  <field name="nmvs_transaction_language"/> -->
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <div class="content-group">
+                              <div class="mt16 row">
+                                  <!-- <label for="nmvs_login" string="Login" class="col-3 col-lg-3"/>
+                                  <field name="nmvs_login"/>
+                                  <label for="nmvs_user" string="User" class="col-3 col-lg-3"/>
+                                  <field name="nmvs_user"/>
+                                  <label for="nmvs_key" string="Key" class="col-3 col-lg-3"/>
+                                  <field name="nmvs_key" password="True"/>-->
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <h2>Software</h2>
+                    <div class="row mt16 o_settings_container" name="catalog_setting_container">
+                      <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <div class="content-group">
+                              <div class="mt16 row">
+                                  <label for="nmvs_us_name" string="US Name" class="col-3 col-lg-3"/>
+                                  <field name="nmvs_us_name"/>
+                                  <label for="nmvs_us_version" string="US Version" class="col-3 col-lg-3"/>
+                                  <field name="nmvs_us_version"/>
+                                  <label for="nmvs_us_supplier" string="US Supplier" class="col-3 col-lg-3"/>
+                                  <field name="nmvs_us_supplier"/>
+                                  <label for="nmvs_transaction_language" string="US Lang" class="col-3 col-lg-3"/>
+                                  <field name="nmvs_transaction_language"/>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <div class="content-group">
+                              <div class="mt16 row">
+                                  <label for="nmvs_login" string="Login" class="col-3 col-lg-3"/>
+                                  <field name="nmvs_login"/>
+                                  <label for="nmvs_user" string="User" class="col-3 col-lg-3"/>
+                                  <field name="nmvs_user"/>
+                                  <label for="nmvs_key" string="Key" class="col-3 col-lg-3"/>
+                                  <field name="nmvs_key" password="True"/>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="action_nmvs_config_settings" model="ir.actions.act_window">
+        <field name="name">Settings</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.config.settings</field>
+        <field name="view_id" ref="res_config_settings_view_form"/>
+        <field name="view_mode">form</field>
+        <field name="target">inline</field>
+        <field name="context">{'module' : 'sic_nmvs_connector', 'bin_size': False}</field>
+    </record>
+
+
+</odoo>

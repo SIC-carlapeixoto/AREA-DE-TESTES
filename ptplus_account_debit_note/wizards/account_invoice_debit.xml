@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!--
+    <record id="view_account_invoice_debit" model="ir.ui.view">
+        <field name="name">account.invoice.debit.form</field>
+        <field name="model">account.invoice.debit</field>
+        <field name="arch" type="xml">
+            <form string="Debit Note">
+                <group>
+                     <group>
+                         <field name="description" />
+                        <field name="vat_adjustment_norm_id" />
+                        <field name="vat_adjustment_requests_policy" invisible="1" />
+                        <field
+                            name="vat_adjustment_request_number"
+                            attrs="{'invisible': [('vat_adjustment_requests_policy', 'not in', ('optional', 'mandatory'))]}"
+                        />
+                     </group>
+                     <group>
+                         <field name="invoice_date" />
+                         <field name="date" groups="base.group_no_one" />
+                     </group>
+                </group>
+                <footer>
+                    <button
+                        string='Create Debit'
+                        name="invoice_debit"
+                        type="object"
+                        class="btn-primary"
+                    />
+                    <button string="Cancel" class="btn-default" special="cancel" />
+                </footer>
+           </form>
+        </field>
+    </record>
+
+    <record id="action_account_invoice_debit" model="ir.actions.act_window">
+        <field name="name">Debit Note</field>
+        <field name="res_model">account.invoice.debit</field>
+        <field name="view_mode">tree,form</field>
+       <field name="view_id" ref="view_account_invoice_debit" />
+       <field name="target">new</field>
+    </record>
+  -->
+</odoo>
