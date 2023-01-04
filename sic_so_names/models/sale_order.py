@@ -4,7 +4,6 @@ class SaleOrder(models.Model):
     _inherit = "sale.order"
 
 
-    @api.multi
     def write(self, values):
         if 'name' in values.keys():
             purchase_ids = self.env['purchase.order'].search([('origin', '=', self.name)])
