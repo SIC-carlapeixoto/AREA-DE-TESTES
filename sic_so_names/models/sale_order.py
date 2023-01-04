@@ -9,5 +9,5 @@ class SaleOrder(models.Model):
             purchase_ids = self.env['purchase.order'].search([('origin', '=', self.name)])
             for po in purchase_ids:
                 po.origin = values['name']
-        super(SaleOrder, self).write()
+        super(SaleOrder, self).write(values)
         
